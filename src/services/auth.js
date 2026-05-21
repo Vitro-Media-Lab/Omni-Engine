@@ -24,7 +24,8 @@ export async function loginUser(username, password) {
     const data = await res.json().catch(() => ({}));
 
     if (!res.ok) {
-        throw new Error(data?.message ?? 'Login failed. Check your credentials.');
+        const raw = data?.message ?? 'Login failed. Check your credentials.';
+        throw new Error(raw.replace(/<[^>]*>/g, ''));
     }
 
     const token = data.token ?? data.data?.token;
@@ -52,9 +53,8 @@ export async function checkSubscription() {
     let res;
     try {
         res = await fetch(`${API}/wp-json/vitro/v1/check-access`, {
-            method:  'POST',
+            method:  'GET',
             headers: {
-                'Content-Type':  'application/json',
                 'Authorization': `Bearer ${token}`,
             },
         });
@@ -72,5 +72,7 @@ export async function checkSubscription() {
     if (!res.ok) return 'no_subscription';
 
     const data = await res.json().catch(() => ({}));
-    return data.has_access ? 'approved' : 'no_subscription';
+    return Array.isArray(data.entitlements) && data.entitlements.includes('ENGINE-ACCESS')
+        ? 'approved'
+        : 'no_subscription';
 }
