@@ -1,0 +1,10 @@
+{
+    "city": "BERLIN MITTE",
+    "region": "BERLIN // GERMANY",
+    "lat": 52.5186,
+    "lon": 13.3761,
+    "radius": 1500,
+    "view_width": 2550.0,
+    "file_prefix": "BERLIN_MITTE__BERLIN__1500__",
+    "data_path": "cache/cities/BERLIN_MITTE/"
+}
