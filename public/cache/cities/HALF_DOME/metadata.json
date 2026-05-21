@@ -1,0 +1,10 @@
+{
+    "city": "HALF DOME",
+    "region": "YOSEMITE NATIONAL PARK // CALIFORNIA",
+    "lat": 37.74689551550035,
+    "lon": -119.532780677812,
+    "radius": 10000,
+    "view_width": 17000.0,
+    "file_prefix": "HALF_DOME__YOSEMITE_NATIONAL_PARK__10000__",
+    "data_path": "cache/cities/HALF_DOME/"
+}
