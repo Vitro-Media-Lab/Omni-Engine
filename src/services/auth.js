@@ -72,7 +72,8 @@ export async function checkSubscription() {
     if (!res.ok) return 'no_subscription';
 
     const data = await res.json().catch(() => ({}));
-    return Array.isArray(data.entitlements) && data.entitlements.includes('ENGINE-ACCESS')
+    return Array.isArray(data.entitlements) &&
+        (data.entitlements.includes('ENGINE-ACCESS') || data.entitlements.includes('DEVPASSENGINE'))
         ? 'approved'
         : 'no_subscription';
 }
