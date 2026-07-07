@@ -1,0 +1,10 @@
+{
+    "city": "BIG SKY RESORT",
+    "region": "BIG SKY // MONTANA",
+    "lat": 45.28806376596796,
+    "lon": -111.43457761412817,
+    "radius": 15000,
+    "view_width": 25500.0,
+    "file_prefix": "BIG_SKY_RESORT__BIG_SKY__15000__",
+    "data_path": "cache/cities/BIG_SKY_RESORT/"
+}

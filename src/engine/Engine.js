@@ -17,7 +17,6 @@
 
 import * as THREE          from 'three';
 import { OrbitControls }   from 'three/examples/jsm/controls/OrbitControls.js';
-import Stats               from 'three/examples/jsm/libs/stats.module.js';
 import {
     initLighting,
     updateCSM,
@@ -86,7 +85,6 @@ export class EngineClass {
         this.camera   = null;
         this.renderer = null;
         this.controls = null;
-        this.stats    = null;
 
         // Groups — one per semantic layer, mirrors monolith Engine.groups
         this.groups = {};
@@ -247,7 +245,6 @@ export class EngineClass {
         this._initCamera();
         this._initControls();
         this._initGroups();
-        this._initStats();
         this._initPortalHoles();
         this._initParkMask();
         this._initResize();
@@ -367,13 +364,6 @@ export class EngineClass {
             this.groups[key] = new THREE.Group();
             this.scene.add(this.groups[key]);
         }
-    }
-
-    _initStats() {
-        this.stats = new Stats();
-        this.stats.showPanel(0);
-        this.stats.dom.style.cssText = 'position:fixed;top:0;left:0;z-index:9999;pointer-events:none;';
-        document.body.appendChild(this.stats.dom);
     }
 
     _initPortalHoles() {
@@ -992,8 +982,6 @@ export class EngineClass {
     _animate(timestamp) {
         this._rafId = requestAnimationFrame(this._boundAnimate);
 
-        if (this.stats) this.stats.update();
-
         const dt = timestamp - (this.time.lastFrame || timestamp);
         this.time.lastFrame = timestamp;
 
@@ -1244,11 +1232,6 @@ export class EngineClass {
 
         // Detach visibility handler
         if (this._onVisibilityChange) document.removeEventListener('visibilitychange', this._onVisibilityChange);
-
-        // Remove stats panel from DOM
-        if (this.stats?.dom?.parentNode) {
-            this.stats.dom.parentNode.removeChild(this.stats.dom);
-        }
 
         // Dispose controls
         this.controls?.dispose();

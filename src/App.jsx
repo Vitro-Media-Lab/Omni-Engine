@@ -170,7 +170,6 @@ export default function App() {
                         <select
                             className="mt-1.5 w-full bg-zinc-900 border border-zinc-800 rounded-sm px-2 py-1.5 text-[10px] text-zinc-300 cursor-pointer focus:outline-none focus:border-zinc-600 disabled:opacity-40"
                             value={activeCityKey ?? ''}
-                            disabled={isLoading}
                             onChange={(e) => {
                                 localStorage.setItem('activeCityKey', e.target.value);
                                 window.location.reload();
@@ -334,6 +333,19 @@ export default function App() {
                         </button>
                     </div>
                 </Section>
+
+                {/* ── Attribution ───────────────────────────────────────────── */}
+                <div className="mt-auto px-4 py-3 border-t border-zinc-900 flex flex-col gap-0.5 text-[9px] text-zinc-700">
+                    <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer" className="hover:text-zinc-500 transition-colors">
+                        © OpenStreetMap contributors
+                    </a>
+                    <a href="https://registry.opendata.aws/terrain-tiles/" target="_blank" rel="noopener noreferrer" className="hover:text-zinc-500 transition-colors">
+                        AWS Terrain Tiles
+                    </a>
+                    <a href="https://overturemaps.org/" target="_blank" rel="noopener noreferrer" className="hover:text-zinc-500 transition-colors">
+                        Overture Maps Foundation
+                    </a>
+                </div>
 
             </aside>
 
