@@ -1,0 +1,10 @@
+{
+    "city": "STEAMBOAT SPRINGS",
+    "region": "STEAMBOAT SPRINGS // COLORADO",
+    "lat": 40.464148208824064,
+    "lon": -106.8177702281437,
+    "radius": 20000,
+    "view_width": 34000.0,
+    "file_prefix": "STEAMBOAT_SPRINGS__STEAMBOAT_SPRINGS__20000__",
+    "data_path": "cache/cities/STEAMBOAT_SPRINGS/"
+}

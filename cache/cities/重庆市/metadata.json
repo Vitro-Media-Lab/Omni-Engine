@@ -1,0 +1,10 @@
+{
+    "city": "\u91cd\u5e86\u5e02",
+    "region": "CHONGQING // CHINA",
+    "lat": 29.57358061236195,
+    "lon": 106.58293922375412,
+    "radius": 8000,
+    "view_width": 13600.0,
+    "file_prefix": "\u91cd\u5e86\u5e02__CHONGQING__8000__",
+    "data_path": "cache/cities/\u91cd\u5e86\u5e02/"
+}

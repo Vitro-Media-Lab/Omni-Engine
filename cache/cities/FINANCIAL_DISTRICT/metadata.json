@@ -1,0 +1,10 @@
+{
+    "city": "FINANCIAL DISTRICT",
+    "region": "LOWER MANHATTAN // NEW YORK",
+    "lat": 40.7118,
+    "lon": -74.0131,
+    "radius": 3000,
+    "view_width": 5100.0,
+    "file_prefix": "FINANCIAL_DISTRICT__LOWER_MANHATTAN__3000__",
+    "data_path": "cache/cities/FINANCIAL_DISTRICT/"
+}

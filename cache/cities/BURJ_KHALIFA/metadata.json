@@ -1,0 +1,10 @@
+{
+    "city": "BURJ KHALIFA",
+    "region": "DUBAI // UNITED ARAB EMERITES",
+    "lat": 25.19734259709434,
+    "lon": 55.27435493999029,
+    "radius": 8000,
+    "view_width": 13600.0,
+    "file_prefix": "BURJ_KHALIFA__DUBAI__8000__",
+    "data_path": "cache/cities/BURJ_KHALIFA/"
+}
