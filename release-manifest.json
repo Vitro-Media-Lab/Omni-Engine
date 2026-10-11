@@ -1,7 +1,7 @@
 {
   "format": "omni-v3-release",
   "version": 1,
-  "createdAt": "2026-10-11T04:46:22.502Z",
+  "createdAt": "2026-10-11T05:01:39.318Z",
   "applicationLicense": "Owner publication licence not assigned by this package",
   "sourceCounts": {
     "studies": 39,
@@ -78,14 +78,14 @@
     {
       "path": "annotation-layout.mjs",
       "kind": "runtime",
-      "bytes": 2396,
-      "sha256": "a212c53b9f0d710e2849eabdb947b862620041ba874b76704f2cacd7b409e184"
+      "bytes": 2576,
+      "sha256": "993bf69e77084b17cee8ae4b9bee45aae54bcf89e67acfff947ad23f0ddd361d"
     },
     {
       "path": "app.mjs",
       "kind": "runtime",
-      "bytes": 37145,
-      "sha256": "f45f3e03ae5668fab31c5359f1ad5bd99a3d87e4a29208da5f8d98a8d513f0bc"
+      "bytes": 37188,
+      "sha256": "a5fd1441cde405a5f0066aa1846cfd9ac698d9dfc4a7b69addd32c417d6aa8b1"
     },
     {
       "path": "attribution-import.mjs",
@@ -1104,8 +1104,8 @@
     {
       "path": "drawing.mjs",
       "kind": "runtime",
-      "bytes": 44726,
-      "sha256": "a4f026962c5519e12d421cc9c860ae2c517329d1aca6c11839d625d70782c5f4"
+      "bytes": 45452,
+      "sha256": "7491c5203c9855e357aefd1da52acb1b0eb67943a93ce99800ab4abbc30fbfa9"
     },
     {
       "path": "export.mjs",
@@ -1128,8 +1128,8 @@
     {
       "path": "index.html",
       "kind": "runtime",
-      "bytes": 19044,
-      "sha256": "851f3c0cd3d43940127027cc8864601b55c00be4c1031832c4f67418f4432f92"
+      "bytes": 19519,
+      "sha256": "e13f92ea7094be7928f652d2107b66585baaaf887017063c2ebb256830dce5d1"
     },
     {
       "path": "lib/EARCUT-LICENSE.txt",
@@ -1248,14 +1248,14 @@
     {
       "path": "studio-controls.mjs",
       "kind": "runtime",
-      "bytes": 2035,
-      "sha256": "a73a506d6b704beeea237d17cbdb67ea31d0a7db0acc63fc50358a5cb75b7d33"
+      "bytes": 2240,
+      "sha256": "40de077d5c4367f9d6ee9d9261cf8019a85f8d6d4694d6f7d01531b2bf9564ac"
     },
     {
       "path": "studio-state.mjs",
       "kind": "runtime",
-      "bytes": 4414,
-      "sha256": "5e21ea0754e9ad7dda57ff27465759efdf5bd904b6bb471591d8a51d35c38629"
+      "bytes": 4525,
+      "sha256": "b6453b5231a430d681b772cabadcc5014a22403dd722eb67eb494bf664e7479e"
     },
     {
       "path": "studio.css",

@@ -88,7 +88,7 @@ function syncControlAvailability(){
   }
   for(const button of document.querySelectorAll('[data-style],[data-view],[data-output-preset],[data-output]'))button.setAttribute('aria-pressed',String(button.classList.contains('active')));
   const warning=inkVisibilityWarning(settings);$('#artwork-warning').hidden=!warning;$('#artwork-warning span').textContent=warning;
-  $('[data-setting=titleBackdrop]').closest('label').hidden=settings.titleLayout!=='panel';
+  for(const key of ['titleBackdrop','titleOpacity'])$(`[data-setting=${key}]`).closest('label').hidden=settings.titleLayout!=='panel';
   $('#fit-buildings').disabled=!map||mapLoading||settings.buildings===false;
 }
 function syncPNGInfo(){

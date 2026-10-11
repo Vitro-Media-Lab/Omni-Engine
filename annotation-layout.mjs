@@ -1,5 +1,7 @@
 import {attributionLayout} from './attribution.mjs';
 
+export const subtitleFonts=Object.freeze({sans:'Verdana, Arial, sans-serif',serif:'Georgia, Times New Roman, serif',mono:'Courier New, Courier, monospace'});
+
 /** Legacy switches resolve to one annotation container, never stacked bars. */
 export function annotationStyle(settings={}) {
   if(settings.titleLayout==='strip')return 'strip';
@@ -22,7 +24,7 @@ export function annotationLayout(settings={}, {map={},width=420,height=297,margi
     const x=(width-panelWidth)/2,y=margin+side*.09,titleSpace=title?side*(subtitle ? .13 : .105):0;
     const measured=measure(panelWidth-8);
     credit={x:x+4,y:y+titleSpace+2,...measured};
-    header={x,y,width:panelWidth,height:titleSpace+measured.height+4,side,titleY:y+side*.065,subtitleY:y+side*.103};
+    header={x,y,width:panelWidth,height:titleSpace+measured.height+4,side,titleY:y+side*.065,dividerY:y+side*.081,subtitleY:y+side*.109};
   }else if(active){
     const creditWidth=(style==='block'&&title&&credits?Math.min(145,available*.42):available)-reserve;
     const measured=measure(creditWidth),caption=style==='strip'&&title?7:0;

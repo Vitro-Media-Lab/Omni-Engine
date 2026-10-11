@@ -15,7 +15,7 @@ import {canvasBackgroundColor} from './canvas-background.mjs';
 import {waterBoundarySegments} from './water-boundary.mjs';
 import {spacedTrees} from './tree-spacing.mjs';
 import {attributionMarkup,attributionText,getAttribution} from './attribution.mjs';
-import {annotationLayout} from './annotation-layout.mjs';
+import {annotationLayout,subtitleFonts} from './annotation-layout.mjs';
 import {roadVisible} from './road-style.mjs';
 import {colorPenLayers} from './plotter-colors.mjs';
 
@@ -268,7 +268,7 @@ class SvgWriter {
   }
   text(layer, value, x, y, height = 2.4, attributes = {}) {
     const string = String(value ?? '');
-    if (!this.plotter) { this.layer(layer).push(`<text x="${number(x)}" y="${number(y)}" fill="${this.theme.ink}" font-family="Arial, Helvetica, sans-serif" font-size="${number(height)}" ${Object.entries(attributes).map(([k, v]) => `${k}="${escapeXml(v)}"`).join(' ')}>${escapeXml(string)}</text>`); return; }
+    if (!this.plotter) { const style={fill:this.theme.ink,'font-family':'Arial, Helvetica, sans-serif','font-size':number(height),...attributes}; this.layer(layer).push(`<text x="${number(x)}" y="${number(y)}" ${Object.entries(style).map(([k, v]) => `${k}="${escapeXml(v)}"`).join(' ')}>${escapeXml(string)}</text>`); return; }
     const unit = height / 6, upper = string.normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toUpperCase();
     const width = upper.length * unit * 5;
     const anchor = attributes['text-anchor'];
@@ -525,17 +525,22 @@ export function renderDrawing(map = {}, settings = {}, { plotter = false, plotte
   if(notes.active&&notes.style==='panel'){
     const panel=notes.header,middle=panel.x+panel.width/2;
     const backing=settings.titleBackdrop===true&&notes.title&&!plotter&&!transparent&&!lineArt;
-    if(backing)writer.layer(annotation).push(`<rect x="${number(panel.x)}" y="${number(panel.y)}" width="${number(panel.width)}" height="${number(panel.height)}" fill="${theme.panel||theme.paper}" opacity="0.92"/>`);
+    const panelOpacity=Number.isFinite(settings.titleOpacity)?Math.max(0,Math.min(100,settings.titleOpacity))/100:.78;
+    if(backing)writer.layer(annotation).push(`<rect x="${number(panel.x)}" y="${number(panel.y)}" width="${number(panel.width)}" height="${number(panel.height)}" fill="${theme.panel||theme.paper}" opacity="${number(panelOpacity)}"/>`);
     const panelColor=backing?theme.panel||theme.paper:canvasColor;
     creditInk=sourceInk(panelColor);
-    writer.theme={...writer.theme,ink:noteInk(panelColor)};
+    const headerInk=lineArt||transparent?theme.ink:settings.inkColor||(luminance(panelColor)<128?'#ffffff':theme.titleInk&&luminance(theme.titleInk)<128?theme.titleInk:'#25282c');
+    writer.theme={...writer.theme,ink:headerInk};
     if(notes.title){
       const tracking=config.style==='survey-rome'?.25:.015,upper=annotationTitle.toUpperCase();
       const units=Math.max(1,[...upper].reduce((sum,c)=>sum+(/[MW@]/.test(c)?1.1:/[I1 .,:/]/.test(c)?.4:.8),0)+Math.max(0,upper.length-1)*tracking);
       const size=Math.min(panel.side*.052,panel.width*.88/units);
       if(plotter)writer.text(annotation,upper,middle,panel.titleY,size,{'text-anchor':'middle'});
       else writer.layer(annotation).push(`<text x="${number(middle)}" y="${number(panel.titleY)}" text-anchor="middle" font-family="${escapeXml(theme.titleFont||'Georgia, serif')}" font-size="${number(size)}" font-weight="700" letter-spacing="${number(size*tracking)}" fill="${writer.theme.ink}">${escapeXml(upper)}</text>`);
-      if(notes.subtitle)writer.text(annotation,notes.subtitle,middle,panel.subtitleY,fitText(notes.subtitle,panel.side*.015,panel.width*.9),{'text-anchor':'middle'});
+      if(notes.subtitle){
+        writer.lines(annotation,[[[middle-panel.width*.32,panel.dividerY],[middle+panel.width*.32,panel.dividerY]]],{stroke:headerInk,'stroke-width':.25});
+        writer.text(annotation,notes.subtitle,middle,panel.subtitleY,fitText(notes.subtitle,panel.side*.015,panel.width*.86),{'text-anchor':'middle','font-family':subtitleFonts[settings.subtitleFont]||subtitleFonts.sans,'font-weight':'500','letter-spacing':number(panel.side*.0006)});
+      }
     }
   }else if(notes.active&&notes.style==='block'){
     writer.lines(annotation,[[[margin,footerTop],[width-margin,footerTop]]],{stroke:theme.soft,'stroke-width':.15});
@@ -543,7 +548,7 @@ export function renderDrawing(map = {}, settings = {}, { plotter = false, plotte
       const space=notes.credits?notes.credit.x-margin-10:width-margin*2-notes.reserve-10;
       if(notes.credits)writer.lines(annotation,[[[notes.credit.x-3,footerTop+3],[notes.credit.x-3,footerBottom-3]]],{stroke:theme.soft,'stroke-width':.15});
       writer.text(annotation,annotationTitle,margin+4,footerTop+10,fitText(annotationTitle,6,space),{'font-weight':'600'});
-      if(notes.subtitle)writer.text(annotation,notes.subtitle,margin+4,footerTop+17,fitText(notes.subtitle,2.5,space));
+      if(notes.subtitle)writer.text(annotation,notes.subtitle,margin+4,footerTop+17,fitText(notes.subtitle,2.5,space),{'font-family':subtitleFonts[settings.subtitleFont]||subtitleFonts.sans});
     }
   }else if(notes.title){
     const caption=[annotationTitle,notes.subtitle].filter(Boolean).join(' / ');

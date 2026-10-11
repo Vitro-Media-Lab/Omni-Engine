@@ -96,7 +96,9 @@
         <label class="select-field">Annotation layout<select data-setting="titleLayout"><option value="panel">Header</option><option value="block">Detailed footer</option><option value="strip">Thin credit strip</option></select></label>
         <label class="select-field">Drawing title<input type="text" data-setting="title" maxlength="90" value=""></label>
         <label class="select-field">Subtitle<input type="text" data-setting="subtitle" maxlength="90" value="" placeholder="Optional · location, collection or note"></label>
+        <label class="select-field">Subtitle font<select data-setting="subtitleFont"><option value="sans">Sans serif · Verdana</option><option value="serif">Serif · Georgia</option><option value="mono">Monospace · Courier</option></select></label>
         <label class="toggle-field"><span>Header backing panel</span><input type="checkbox" data-setting="titleBackdrop"></label>
+        <label class="range-field"><span>Header panel opacity <output id="titleOpacity-value">78%</output></span><input type="range" min="0" max="100" step="1" value="78" data-setting="titleOpacity" data-unit="%"></label>
         <label class="toggle-field"><span>Compass / north arrow</span><input type="checkbox" data-setting="compass"></label>
         <label class="select-field">Compass location<select data-setting="compassPosition"><option value="map">Map · bottom right</option><option value="footer">Footer · bottom right</option></select></label>
         <label class="toggle-field"><span>Page & map outline</span><input type="checkbox" data-setting="outline"></label>

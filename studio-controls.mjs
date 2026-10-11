@@ -6,7 +6,8 @@ import {themeForSettings} from './themes.mjs';
 export function controlAvailability(settings,map){
   const title=Boolean(settings.titlePanel||settings.titleBlock),color=settings.artwork==='color';
   return {
-    titleLayout:title||settings.showCredits===true,title,subtitle:title,
+    titleLayout:title||settings.showCredits===true,title,subtitle:title,subtitleFont:title&&Boolean(String(settings.subtitle||'').trim()),
+    titleOpacity:title&&annotationStyle(settings)==='panel'&&settings.titleBackdrop===true&&color&&settings.pngBackground!=='transparent',
     titleBackdrop:title&&annotationStyle(settings)==='panel'&&color&&settings.pngBackground!=='transparent',
     compassPosition:settings.compass===true,orientation:!['square','square48'].includes(settings.paper),
     buildingFill:settings.buildings!==false,buildingWeight:settings.buildings!==false,
