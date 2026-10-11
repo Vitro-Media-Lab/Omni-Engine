@@ -1,0 +1,69 @@
+{
+  "complete": true,
+  "verifiedAt": "2026-10-10T06:48:05.238Z",
+  "method": "AWS response imagery headers verified against unchanged cached PNG bytes",
+  "providers": [
+    "ned",
+    "ned13",
+    "srtm",
+    "gmted"
+  ],
+  "tiles": [
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/2411/3078.png",
+      "sha256": "2919a84ce980e2186ea6b5e8bf37c205522362e95642c0e9759e81069e19294c",
+      "etag": "4d5fb990f48940b124b221f54752c9c0",
+      "versionId": "aSbS_PA1VZwg24JnfKNJaLXf.fA6jKHG",
+      "imagerySources": [
+        "ned/ned19_n41x00_w074x25_nj_northeast_2007.tif",
+        "ned/ned19_n40x75_w074x25_nj_northeast_2007.tif",
+        "ned13/USGS_NED_13_n41w075_IMG.tif",
+        "srtm/N40W075.tif",
+        "gmted/30N090W_20101117_gmted_mea075.tif",
+        "gmted/30N090W_20101117_gmted_mea300.tif"
+      ]
+    },
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/2412/3078.png",
+      "sha256": "b952249e1449fbd79b4476fcae152aa0f59192742003c9f7abd75e63506ef810",
+      "etag": "653f517aaf6daa2568ecc48068857ddb",
+      "versionId": "15sE1emiLsT4SpgU6kIXKOYZVv0.XtsY",
+      "imagerySources": [
+        "ned/ned19_n41x00_w074x25_nj_northeast_2007.tif",
+        "ned13/USGS_NED_13_n41w074_IMG.tif",
+        "ned13/USGS_NED_13_n41w075_IMG.tif",
+        "srtm/N40W074.tif",
+        "srtm/N40W075.tif",
+        "gmted/30N090W_20101117_gmted_mea075.tif",
+        "gmted/30N090W_20101117_gmted_mea300.tif"
+      ]
+    },
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/2411/3079.png",
+      "sha256": "5b4d908d302c904f7e84287a8d3b1b405763f668f2745d5155fac22f8a607829",
+      "etag": "7118368dff78de6cd014e8427c7c264b",
+      "versionId": "Av4GMim4Typ9WBLzBl.BRVYLG6Pl38l6",
+      "imagerySources": [
+        "ned/ned19_n40x75_w074x25_nj_northeast_2007.tif",
+        "ned13/USGS_NED_13_n41w075_IMG.tif",
+        "srtm/N40W075.tif",
+        "gmted/30N090W_20101117_gmted_mea075.tif",
+        "gmted/30N090W_20101117_gmted_mea300.tif"
+      ]
+    },
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/2412/3079.png",
+      "sha256": "0ae7def82dc2369871b027ac35114f74d89f8146ccc5a2946e17b3d4fb256976",
+      "etag": "0db35c5578bb54b2314d9ff62bef0990",
+      "versionId": "QSWl1v0MCZhoA4A5TIOQSydPOSNwRfC3",
+      "imagerySources": [
+        "ned13/USGS_NED_13_n41w074_IMG.tif",
+        "ned13/USGS_NED_13_n41w075_IMG.tif",
+        "srtm/N40W074.tif",
+        "srtm/N40W075.tif",
+        "gmted/30N090W_20101117_gmted_mea075.tif",
+        "gmted/30N090W_20101117_gmted_mea300.tif"
+      ]
+    }
+  ]
+}

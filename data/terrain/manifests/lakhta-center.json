@@ -1,0 +1,111 @@
+{
+  "complete": true,
+  "verifiedAt": "2026-10-10T06:48:05.273Z",
+  "method": "AWS response imagery headers verified against unchanged cached PNG bytes",
+  "providers": [
+    "pgdc_5m",
+    "srtm",
+    "gmted",
+    "etopo1"
+  ],
+  "tiles": [
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/4781/2378.png",
+      "sha256": "07096fc6a7107e6f386c27858bf7cb3a4e33a3693a676594d360db551697ff2a",
+      "etag": "ceaa3d29f0a9c447a73e225430d123ba",
+      "versionId": "X0wPodU16W28_PMQaT7sgg2UHLCBNhPR",
+      "imagerySources": [
+        "pgdc_5m/32_73_1_1_5m_v2.0.tif"
+      ]
+    },
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/4782/2378.png",
+      "sha256": "632879697f7aab7d64d97c1b49e435ca5f45a4822ce8d0e01113fa5315fd752e",
+      "etag": "b33dfb9b8f58890ca176ca48c36b3896",
+      "versionId": "NjlH2CH1_1ie5mWVsvqW2JdSGIaF2tAa",
+      "imagerySources": [
+        "pgdc_5m/32_73_1_1_5m_v2.0.tif",
+        "pgdc_5m/32_73_1_2_5m_v2.0.tif",
+        "srtm/N59E030.tif",
+        "gmted/50N030E_20101117_gmted_mea075.tif"
+      ]
+    },
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/4783/2378.png",
+      "sha256": "5ad56d671bc4989398c57011dc8cc2d638ef0eeef3493d2cac05b060fe7d77a4",
+      "etag": "35a405d193dba10cfbad781d3c8a16fc",
+      "versionId": "pNwVLx05Gg0IZeTo8w6j5D.iNEv3DrsD",
+      "imagerySources": [
+        "pgdc_5m/32_73_1_2_5m_v2.0.tif",
+        "srtm/N59E030.tif",
+        "gmted/50N030E_20101117_gmted_mea075.tif"
+      ]
+    },
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/4781/2379.png",
+      "sha256": "1452e42ec2a0a1f17674d4421aa185bea0289fd8d93024158a0a0146d68e1024",
+      "etag": "51d2b9c682f4734b31cd7aa9cf47293c",
+      "versionId": "SGtEhjT2DBTneETVeAx8owk5dbnykaJl",
+      "imagerySources": [
+        "pgdc_5m/32_73_1_1_5m_v2.0.tif"
+      ]
+    },
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/4782/2379.png",
+      "sha256": "0c1bb6d2e99bfeb47a023f016c569927bb32efb4c2a61bbd771961c79e1cde77",
+      "etag": "016041cb410374ed4107b8b3edf8d20a",
+      "versionId": "fHBzWslUt_Mfq9VsYZTM5xPsYepU0yFI",
+      "imagerySources": [
+        "pgdc_5m/32_73_1_1_5m_v2.0.tif",
+        "pgdc_5m/32_73_1_2_5m_v2.0.tif"
+      ]
+    },
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/4783/2379.png",
+      "sha256": "a6d03e5664792b64599b613adccdc7710420fcd08478158c6474b38aee400994",
+      "etag": "0ad81c796f7f5ba98be23e1477ad730d",
+      "versionId": "5GuW8rcmkq6LmtJo4ZY4OHfRFyYF599d",
+      "imagerySources": [
+        "pgdc_5m/32_73_1_1_5m_v2.0.tif",
+        "pgdc_5m/32_73_1_2_5m_v2.0.tif"
+      ]
+    },
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/4781/2380.png",
+      "sha256": "401e36797190a903fb90789fc13a095780fcef9243f5e144720d4f7b3c817664",
+      "etag": "ef023e2037fe564b369bbff3ff7e85bc",
+      "versionId": "WZ4HplVLG.IpAyHguyRpo0XZZNkDfWz2",
+      "imagerySources": [
+        "pgdc_5m/32_73_1_1_5m_v2.0.tif",
+        "srtm/N59E030.tif",
+        "gmted/50N030E_20101117_gmted_mea075.tif",
+        "etopo1/ETOPO1_Bed_g.tif"
+      ]
+    },
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/4782/2380.png",
+      "sha256": "dde5a7e16f1b55eb703962dcdcbb52c26b727ba3b5973e0317207000de84c976",
+      "etag": "986f1c683131e395233698dbb94a70e9",
+      "versionId": "oIxwYFILI9szb1ZcKP06yLdX.F07zzdy",
+      "imagerySources": [
+        "pgdc_5m/32_73_1_1_5m_v2.0.tif",
+        "srtm/N59E030.tif",
+        "gmted/50N030E_20101117_gmted_mea075.tif",
+        "etopo1/ETOPO1_Bed_g.tif"
+      ]
+    },
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/4783/2380.png",
+      "sha256": "e60157019858fa759a2f704b87c75f64479118219e0bf21fe6e4d6720631c666",
+      "etag": "b411191f285b732f170d27f24aa24d32",
+      "versionId": "E6SZtQxQNnwmPS_iUARSjkR.BeQf3DDH",
+      "imagerySources": [
+        "pgdc_5m/32_73_1_1_5m_v2.0.tif",
+        "pgdc_5m/32_73_1_2_5m_v2.0.tif",
+        "srtm/N59E030.tif",
+        "gmted/50N030E_20101117_gmted_mea075.tif",
+        "etopo1/ETOPO1_Bed_g.tif"
+      ]
+    }
+  ]
+}

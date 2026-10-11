@@ -1,0 +1,19 @@
+Omni Engine V3 - data attribution
+Taj Mahal
+
+© OpenStreetMap contributors · ODbL 1.0 · openstreetmap.org/copyright
+Data: OpenStreetMap contributors · ODbL
+Terrain: Tilezen / AWS Terrain Tiles
+Terrain SRTM / GMTED2010 courtesy of the U.S. Geological Survey. Modified terrain.
+
+Source and licence references:
+https://www.openstreetmap.org/copyright
+https://opendatacommons.org/licenses/odbl/1-0/
+https://registry.opendata.aws/terrain-tiles/
+https://github.com/tilezen/joerd/blob/master/docs/attribution.md
+
+Changes: geographic clipping, geometry simplification, architectural styling and optional height/terrain scaling.
+The data licences do not license the Omni application or automatically license the artwork design.
+
+For merchandise, retain these notices at the point of sale, on packaging and, where practical, on the item or its label.
+A publicly used derivative ODbL database requires its notices and an offer of the derivative data or reproducible alteration file; an artwork credit alone does not fulfil that separate obligation.

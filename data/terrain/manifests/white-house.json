@@ -1,0 +1,85 @@
+{
+  "complete": true,
+  "verifiedAt": "2026-10-11T04:23:46.558Z",
+  "method": "AWS response imagery headers verified against unchanged cached PNG bytes",
+  "providers": [
+    "ned",
+    "ned13",
+    "srtm",
+    "gmted"
+  ],
+  "tiles": [
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/2342/3132.png",
+      "sha256": "87667e0709b686390602388e3e1927c392a1e592a178a42960b3f73432b66ed3",
+      "etag": "e51941774f534a2dfda25a27d6e15280",
+      "versionId": "BGtRvlY6OdL3HdugqMcAhkifFu3oNRtu",
+      "imagerySources": [
+        "ned/ned19_n39x00_w077x25_md_washingtondc_2008.tif"
+      ]
+    },
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/2343/3132.png",
+      "sha256": "9625f6f72ee5beb31dd6580294e0ca71be8f1d45b81cc1112577d1934cce7366",
+      "etag": "c4022289e8f911f5ac761ab94872876a",
+      "versionId": "kWvKljEvm8K0VZz.aA6cgpEFiIqBVM1o",
+      "imagerySources": [
+        "ned/ned19_n39x00_w077x25_md_washingtondc_2008.tif",
+        "ned/ned19_n39x00_w077x00_md_washingtondc_2008.tif"
+      ]
+    },
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/2342/3133.png",
+      "sha256": "18ea17ec0a249821dacf3dd8b17312ad604cd67d060f1e0e3d6ba4b5937c57b2",
+      "etag": "7ee18f1f6b69ab4873ebdd74d96eeb12",
+      "versionId": "oMFbEqbW.o3ruQAwaPgoUH_.tb1zLVun",
+      "imagerySources": [
+        "ned/ned19_n39x00_w077x25_md_washingtondc_2008.tif",
+        "ned13/USGS_NED_13_n39w078_IMG.tif",
+        "srtm/N38W078.tif",
+        "gmted/30N090W_20101117_gmted_mea075.tif"
+      ]
+    },
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/2343/3133.png",
+      "sha256": "976ed98da9d04bc84f358ae8c63f2df6d055cd335f9c8f110c6c74fe455ca564",
+      "etag": "de07f1f3bb682e286c24448758dfce75",
+      "versionId": "7XgW2qz1UFKCYlQ3GAezGiw05GIg_SuO",
+      "imagerySources": [
+        "ned/ned19_n39x00_w077x25_md_washingtondc_2008.tif",
+        "ned/ned19_n39x00_w077x00_md_washingtondc_2008.tif",
+        "ned13/USGS_NED_13_n39w077_IMG.tif",
+        "ned13/USGS_NED_13_n39w078_IMG.tif",
+        "srtm/N38W077.tif",
+        "srtm/N38W078.tif"
+      ]
+    },
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/2342/3134.png",
+      "sha256": "57bb380614c411d03a940b5dc849cdc72b90840e9fad99d020a3eead39fdf521",
+      "etag": "fbe2952ab039ffd92023c345b2f84b7c",
+      "versionId": "l4tSpFlT0hVvlFVPDJWMzPjxbS4tQFbS",
+      "imagerySources": [
+        "ned/ned19_n39x00_w077x25_md_washingtondc_2008.tif",
+        "ned13/USGS_NED_13_n39w078_IMG.tif",
+        "srtm/N38W078.tif",
+        "gmted/30N090W_20101117_gmted_mea075.tif"
+      ]
+    },
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/2343/3134.png",
+      "sha256": "089477273a73eb175ed909c746a3f7e45cd39e01e99a1c4e615357a2f32aa973",
+      "etag": "a286a506931da94eef5ee8c8bb8b4c6c",
+      "versionId": "4Hr0_TU6arF5O3QixclpNjOwmCvJqraB",
+      "imagerySources": [
+        "ned/ned19_n39x00_w077x25_md_washingtondc_2008.tif",
+        "ned/ned19_n39x00_w077x00_md_washingtondc_2008.tif",
+        "ned13/USGS_NED_13_n39w077_IMG.tif",
+        "ned13/USGS_NED_13_n39w078_IMG.tif",
+        "srtm/N38W077.tif",
+        "srtm/N38W078.tif",
+        "gmted/30N090W_20101117_gmted_mea075.tif"
+      ]
+    }
+  ]
+}

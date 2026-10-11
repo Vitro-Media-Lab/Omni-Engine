@@ -1,0 +1,46 @@
+{
+  "complete": true,
+  "verifiedAt": "2026-10-10T06:48:05.320Z",
+  "method": "AWS response imagery headers verified against unchanged cached PNG bytes",
+  "providers": [
+    "ned_topobathy"
+  ],
+  "tiles": [
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/1310/3165.png",
+      "sha256": "d2cc02ab42059433a3b593574a15ebe2962137f81c2508981e9034a565726183",
+      "etag": "27e5af9a9972ce1aede605c7487898c4",
+      "versionId": "47WLMiGfRaDltP9O5B7eurXGrPbbC.Tz",
+      "imagerySources": [
+        "ned_topobathy/ned19_n38x00_w122x50_ca_sanfrancisco_topobathy_2010.tif"
+      ]
+    },
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/1311/3165.png",
+      "sha256": "d1835470513715b7086bb5b17d7717f71ff8d346e0ea4ff90cd2449843fec9c4",
+      "etag": "d70ac4f8c20158c00f37b67a2050b3d0",
+      "versionId": "e5w9T5RJq9W3lAl0mysVNkqMH3ygamuO",
+      "imagerySources": [
+        "ned_topobathy/ned19_n38x00_w122x50_ca_sanfrancisco_topobathy_2010.tif"
+      ]
+    },
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/1310/3166.png",
+      "sha256": "eb3797073bc8138b8703c6ecf2a8d3f7dff5c7f7d391d9b09ff13077c041cc9e",
+      "etag": "5ffdde0dfe9ff26892d218940d0ab0ab",
+      "versionId": "rtfvucsVexw5QL3kZmaZl.d19XqADkBu",
+      "imagerySources": [
+        "ned_topobathy/ned19_n38x00_w122x50_ca_sanfrancisco_topobathy_2010.tif"
+      ]
+    },
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/1311/3166.png",
+      "sha256": "609310cc0ed394c39a7d20577e944c535b997dfcfa50dafdaa4459e90242f7dd",
+      "etag": "54bfc45856628dbab658ed48dca3fc04",
+      "versionId": "_FH_ze5tFO7wbX98Me03pNY0tJUOnQlH",
+      "imagerySources": [
+        "ned_topobathy/ned19_n38x00_w122x50_ca_sanfrancisco_topobathy_2010.tif"
+      ]
+    }
+  ]
+}

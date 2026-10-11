@@ -1,0 +1,1315 @@
+{
+  "format": "omni-v3-release",
+  "version": 1,
+  "createdAt": "2026-10-11T04:46:22.502Z",
+  "applicationLicense": "Owner publication licence not assigned by this package",
+  "sourceCounts": {
+    "studies": 39,
+    "buildings": 675371,
+    "buildingParts": 106198,
+    "terrainTileReferences": 223
+  },
+  "runtimeEntry": "index.html",
+  "runtimeFiles": [
+    "annotation-layout.mjs",
+    "app.mjs",
+    "attribution-import.mjs",
+    "attribution.mjs",
+    "building-index.mjs",
+    "building-shape.mjs",
+    "canvas-background.mjs",
+    "crop.mjs",
+    "data.mjs",
+    "data/index.json",
+    "drawing-worker.mjs",
+    "drawing.mjs",
+    "export.mjs",
+    "fit-buildings.mjs",
+    "hero.mjs",
+    "index.html",
+    "lib/Earcut.mjs",
+    "lib/three.module.mjs",
+    "live-chunk.mjs",
+    "live-geometry-worker.mjs",
+    "live-geometry.mjs",
+    "live-view.mjs",
+    "map-zoom.mjs",
+    "model-package.mjs",
+    "output-style.mjs",
+    "paper-sizes.mjs",
+    "pinch.mjs",
+    "plotter-colors.mjs",
+    "projection.mjs",
+    "raster-export.mjs",
+    "road-style.mjs",
+    "studio-controls.mjs",
+    "studio-state.mjs",
+    "studio.css",
+    "study-origin.mjs",
+    "surface-style.mjs",
+    "terrain-solid.mjs",
+    "terrain.mjs",
+    "themes.mjs",
+    "tree-spacing.mjs",
+    "water-boundary.mjs"
+  ],
+  "dataOffer": "data/sources.html",
+  "excluded": [
+    "source-cache",
+    "historical mixed-source snapshots",
+    "backups",
+    "examples",
+    "tools",
+    "development plans"
+  ],
+  "files": [
+    {
+      "path": ".gitattributes",
+      "kind": "hosting",
+      "bytes": 8,
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
+    },
+    {
+      "path": ".nojekyll",
+      "kind": "hosting",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "annotation-layout.mjs",
+      "kind": "runtime",
+      "bytes": 2396,
+      "sha256": "a212c53b9f0d710e2849eabdb947b862620041ba874b76704f2cacd7b409e184"
+    },
+    {
+      "path": "app.mjs",
+      "kind": "runtime",
+      "bytes": 37145,
+      "sha256": "f45f3e03ae5668fab31c5359f1ad5bd99a3d87e4a29208da5f8d98a8d513f0bc"
+    },
+    {
+      "path": "attribution-import.mjs",
+      "kind": "runtime",
+      "bytes": 6849,
+      "sha256": "cf778518a39995165aafc2028e65d9c95bf62d185ce46971e179612627ec3518"
+    },
+    {
+      "path": "ATTRIBUTION.md",
+      "kind": "notice",
+      "bytes": 11076,
+      "sha256": "89bb88fa9e23738cd485c8bc0f083109bf26620d2942a15838a8820f601eb98c"
+    },
+    {
+      "path": "attribution.mjs",
+      "kind": "runtime",
+      "bytes": 13671,
+      "sha256": "724b6e8771c8f89ea737e3594daf1d905f77511cfd1e50ff55b1bbbe46e52500"
+    },
+    {
+      "path": "building-index.mjs",
+      "kind": "runtime",
+      "bytes": 1998,
+      "sha256": "d31ff9aa125c6a29e92efbb7138330b253c26c96c04ca09674ab8488cd4b302d"
+    },
+    {
+      "path": "building-shape.mjs",
+      "kind": "runtime",
+      "bytes": 14955,
+      "sha256": "fd39ce26413714d98b217f44cd449669495bbfb09a4d0bfd3741115710112395"
+    },
+    {
+      "path": "canvas-background.mjs",
+      "kind": "runtime",
+      "bytes": 214,
+      "sha256": "06c7a579bee769d9befd64bff25a033bc8c4d1fdf64956954246dc88c494c6ae"
+    },
+    {
+      "path": "CNAME",
+      "kind": "hosting",
+      "bytes": 25,
+      "sha256": "41e693475cd3d15b33c73ac200ba19b628d16303789d67eed39cd815e58f4bf3"
+    },
+    {
+      "path": "crop.mjs",
+      "kind": "runtime",
+      "bytes": 11341,
+      "sha256": "9266e8449de9d0ddb247387ecfc7948d211e60d8dd0bb6001274741c2c98deec"
+    },
+    {
+      "path": "data.mjs",
+      "kind": "runtime",
+      "bytes": 30092,
+      "sha256": "8d252c41610af7c92a451d77aa870799a7e22a85c4c50127e054efe551b1457b"
+    },
+    {
+      "path": "data/abraj-al-bait.json",
+      "kind": "prepared-map",
+      "bytes": 992839,
+      "sha256": "ea23b58a1089ac3d069b98d3e889324c6f011a9f407144f965ea410c0a1ad006"
+    },
+    {
+      "path": "data/acropolis.json",
+      "kind": "prepared-map",
+      "bytes": 13540456,
+      "sha256": "f639caddb74c083c5aafd940eae03f5d61fe590b8ed79ca0c481a00be852a147"
+    },
+    {
+      "path": "data/burj-khalifa.json",
+      "kind": "prepared-map",
+      "bytes": 6668089,
+      "sha256": "d987029a563aaa20bfd6a51189fd6f45b8d1a2b5eff78f40c3b6f4aae1955013"
+    },
+    {
+      "path": "data/cn-tower.json",
+      "kind": "prepared-map",
+      "bytes": 7127966,
+      "sha256": "4a28e47cfb3f542a8fbf6b8e3fc1bb0910e08b737e7789032fe7c32852b762e5"
+    },
+    {
+      "path": "data/colosseum.json",
+      "kind": "prepared-map",
+      "bytes": 8109105,
+      "sha256": "46915ddc8ece5426d0ef52166f2213e767cd0684c20b36686221adf54fd906f5"
+    },
+    {
+      "path": "data/eiffel-tower.json",
+      "kind": "prepared-map",
+      "bytes": 15590712,
+      "sha256": "edded4eb1599bad26bf462b57bb4320b05e9925d0e36c10b32c152781011641e"
+    },
+    {
+      "path": "data/empire-state-building.json",
+      "kind": "prepared-map",
+      "bytes": 10130277,
+      "sha256": "92ae1def19a6c2777fadbb76c62dd28b809ff7bf002007267f7b45150a8bfad5"
+    },
+    {
+      "path": "data/financial-district.json",
+      "kind": "prepared-map",
+      "bytes": 11955556,
+      "sha256": "e690a50a2da692e6526c04ba5044794c2939ee663e935975fece631b355141b1"
+    },
+    {
+      "path": "data/golden-gate-bridge.json",
+      "kind": "prepared-map",
+      "bytes": 1114161,
+      "sha256": "c5ba96608553d2faedeeccfeca3672338510070a7c188c2bdd5a42f7b5d37211"
+    },
+    {
+      "path": "data/great-pyramid.json",
+      "kind": "prepared-map",
+      "bytes": 1121397,
+      "sha256": "4fc45e7e303ace31f0cec9ee02b6f0a1d14f9d8001cf6bebfbbe48fe0267488a"
+    },
+    {
+      "path": "data/greater-lafayette.json",
+      "kind": "prepared-map",
+      "bytes": 9639455,
+      "sha256": "062c2781b52dcd42dda0dd61aa76adab03ea68b778ee185234fc260bb3486218"
+    },
+    {
+      "path": "data/index.json",
+      "kind": "catalog",
+      "bytes": 12377,
+      "sha256": "b5dfbdad814ed44c7f71126239c08e96c52a83dc87d7fb24a23355b4e6c5a020"
+    },
+    {
+      "path": "data/john-hancock-center.json",
+      "kind": "prepared-map",
+      "bytes": 4012049,
+      "sha256": "b8fe45b01b4a7ca93f37c76248188317fde530a47c77f20a894f076de37b44f5"
+    },
+    {
+      "path": "data/la-porte-courthouse.json",
+      "kind": "prepared-map",
+      "bytes": 3761877,
+      "sha256": "01934c6d0445edca9a8e295272f312f5701431ad98af32e650c420dd420b6660"
+    },
+    {
+      "path": "data/lakhta-center.json",
+      "kind": "prepared-map",
+      "bytes": 1919000,
+      "sha256": "7d61bc2553e70c58acce82acc05a143090daad1ccebd9799611c628028502081"
+    },
+    {
+      "path": "data/lotte-world-tower.json",
+      "kind": "prepared-map",
+      "bytes": 2142090,
+      "sha256": "dd9317681c04ddc067411101b3ba568a7c00dc560382073c8b7871fe832feca4"
+    },
+    {
+      "path": "data/marina-bay-sands.json",
+      "kind": "prepared-map",
+      "bytes": 3951039,
+      "sha256": "f61c48be4f0ec3b39cae500899400b9744bb17a06a13147d3af92968a3727c35"
+    },
+    {
+      "path": "data/merdeka-118.json",
+      "kind": "prepared-map",
+      "bytes": 3948281,
+      "sha256": "e06a74a1a61b4687526479d761af8a5f0fe3addcd693ef39283a2dbdaa955717"
+    },
+    {
+      "path": "data/mont-saint-michel.json",
+      "kind": "prepared-map",
+      "bytes": 177396,
+      "sha256": "0cb9fdac25856de4c88fa2b678bdedc54ea70362601b4acea55ebba7ec1e1035"
+    },
+    {
+      "path": "data/monument-circle.json",
+      "kind": "prepared-map",
+      "bytes": 10549996,
+      "sha256": "679713cf58edcf62f743e625ce60eaaa5db5b686e814174920bb1bb5864b2825"
+    },
+    {
+      "path": "data/mount-fuji.json",
+      "kind": "prepared-map",
+      "bytes": 126054,
+      "sha256": "a4fa68fa943f841f1a00811dd5a453522fbf3c8d6074c44b35ec446256af31aa"
+    },
+    {
+      "path": "data/notices/abraj-al-bait.txt",
+      "kind": "source-notice",
+      "bytes": 1033,
+      "sha256": "6d9c004cb082e30e92afce8846163ee641ba59544a16c6b85f99e13121931bb3"
+    },
+    {
+      "path": "data/notices/acropolis.txt",
+      "kind": "source-notice",
+      "bytes": 1200,
+      "sha256": "5d5fdd8039045c92e19a31076e303c0753ff2461781e30cadc8a95accfd524c2"
+    },
+    {
+      "path": "data/notices/burj-khalifa.txt",
+      "kind": "source-notice",
+      "bytes": 1044,
+      "sha256": "af98bd7d3febeddebafcc8482f43c3e5fdab2ee2331bc5ae24fd5c867a37cff7"
+    },
+    {
+      "path": "data/notices/cn-tower.txt",
+      "kind": "source-notice",
+      "bytes": 1028,
+      "sha256": "7191461761e90de91bc3f5a938313bd776cf1049a78cd48069c4e02f1eebbcd2"
+    },
+    {
+      "path": "data/notices/colosseum.txt",
+      "kind": "source-notice",
+      "bytes": 1200,
+      "sha256": "190d80043e936d7ca7c1142c15fc5e857812382afb254a19a2e4fc8cc222225f"
+    },
+    {
+      "path": "data/notices/eiffel-tower.txt",
+      "kind": "source-notice",
+      "bytes": 1203,
+      "sha256": "fb97337af42d341c3432d3ad9383a78d7e5b9f40b616d099afabed7957ef454c"
+    },
+    {
+      "path": "data/notices/empire-state-building.txt",
+      "kind": "source-notice",
+      "bytes": 1060,
+      "sha256": "ce1b4b425649cc972d0ddee7563afef143341a96bea5ff0125eb3b60c232053c"
+    },
+    {
+      "path": "data/notices/financial-district.txt",
+      "kind": "source-notice",
+      "bytes": 1057,
+      "sha256": "0c8f7f81dfe7b135b79f207c8929feb63fd1846523f4f9197ebb2a537af50eb1"
+    },
+    {
+      "path": "data/notices/golden-gate-bridge.txt",
+      "kind": "source-notice",
+      "bytes": 1038,
+      "sha256": "bf2b7b35cdb502c2d50e9e310663b1ea7e0d8dd05b888f9762a224880f80b52e"
+    },
+    {
+      "path": "data/notices/great-pyramid.txt",
+      "kind": "source-notice",
+      "bytes": 1275,
+      "sha256": "b14b150812d2908191bc14e41bc9efbb140572cf95bf14fb8114178c7dd56b4d"
+    },
+    {
+      "path": "data/notices/greater-lafayette.txt",
+      "kind": "source-notice",
+      "bytes": 1037,
+      "sha256": "eced00f7977b3fb0e50029860dabb4322d201be43228398ab72d5b3720b11bbb"
+    },
+    {
+      "path": "data/notices/john-hancock-center.txt",
+      "kind": "source-notice",
+      "bytes": 1045,
+      "sha256": "ad0a9d5907db3c33e29792a8140c9231c38471fa0ebca47d83e1165c4e5cdb0b"
+    },
+    {
+      "path": "data/notices/la-porte-courthouse.txt",
+      "kind": "source-notice",
+      "bytes": 1046,
+      "sha256": "e04889a829d673aa7244154f0e9307921caaba1f395eef3ac677884ea6849e85"
+    },
+    {
+      "path": "data/notices/lakhta-center.txt",
+      "kind": "source-notice",
+      "bytes": 1356,
+      "sha256": "8791bc30293682a6d234a2da91355dc98f7bbdf95132a1c2ea7c8e48ada3a45d"
+    },
+    {
+      "path": "data/notices/lotte-world-tower.txt",
+      "kind": "source-notice",
+      "bytes": 1049,
+      "sha256": "245d5a0d603afc40bb8c51bddbf953e35fdf663bdc1748ca7033c2c863f9eee9"
+    },
+    {
+      "path": "data/notices/marina-bay-sands.txt",
+      "kind": "source-notice",
+      "bytes": 1048,
+      "sha256": "af8551a13cdcb62a88dbedba81de4a6c876dbd0fc6fdb545e50f35d069bf694b"
+    },
+    {
+      "path": "data/notices/merdeka-118.txt",
+      "kind": "source-notice",
+      "bytes": 1031,
+      "sha256": "fa0366fa7b92c2adadac92e7be5a9af733d3b1b96ee941eab6d72debbe1b7dc8"
+    },
+    {
+      "path": "data/notices/mont-saint-michel.txt",
+      "kind": "source-notice",
+      "bytes": 1208,
+      "sha256": "695bcdd238ab09eb834cd792d23b0aa2fa851b00a95916b60a456886a438cbdc"
+    },
+    {
+      "path": "data/notices/monument-circle.txt",
+      "kind": "source-notice",
+      "bytes": 1035,
+      "sha256": "861d1987e2fb8401cd1d717c54d82fca7af89bd6231cc16aab4993510bf1675d"
+    },
+    {
+      "path": "data/notices/mount-fuji.txt",
+      "kind": "source-notice",
+      "bytes": 1030,
+      "sha256": "2feeec41f55dad4afe2ae177640b6a16f12b877f7ba9b6e4b9cc6543453f46c8"
+    },
+    {
+      "path": "data/notices/oriental-pearl-tower.txt",
+      "kind": "source-notice",
+      "bytes": 1052,
+      "sha256": "1fea408deaf2861ab2bf472d051d8d63c8222ee0084cb5f257dfc52e146a2f2a"
+    },
+    {
+      "path": "data/notices/petronas-towers.txt",
+      "kind": "source-notice",
+      "bytes": 1035,
+      "sha256": "692f23a15a84a3a46ee10638180cfc62fb5c8c9bf72916ce39edaf207f4f8800"
+    },
+    {
+      "path": "data/notices/sagrada-familia.txt",
+      "kind": "source-notice",
+      "bytes": 1207,
+      "sha256": "0647bd2b5645fc2b02a9c850f92797a48a1b84f3ef7411dc8cdb1c0378c41fac"
+    },
+    {
+      "path": "data/notices/salesforce-tower.txt",
+      "kind": "source-notice",
+      "bytes": 1036,
+      "sha256": "3b4b0a497d6a740bcc1eca28809ba984d839839059747f01e216a069e3c519f5"
+    },
+    {
+      "path": "data/notices/shanghai-tower.txt",
+      "kind": "source-notice",
+      "bytes": 1046,
+      "sha256": "ddf60fe2282f6061f53f717859030b46206702c287adbc39ced3d41e331ab38e"
+    },
+    {
+      "path": "data/notices/space-needle.txt",
+      "kind": "source-notice",
+      "bytes": 1051,
+      "sha256": "d895b2845344e71deef2d63e2caced7ef1a2865638ba7a0bc893579b41f439ba"
+    },
+    {
+      "path": "data/notices/st-peters.txt",
+      "kind": "source-notice",
+      "bytes": 1213,
+      "sha256": "9bd1f780f26b1c7f608e6147e26b4593cac5cbe3e281bb559796e2408c503f09"
+    },
+    {
+      "path": "data/notices/sydney-opera-house.txt",
+      "kind": "source-notice",
+      "bytes": 1050,
+      "sha256": "6df1eac4220dc160fca41d740198107348b1ab86996f77e847541112b834c30f"
+    },
+    {
+      "path": "data/notices/table-mountain.txt",
+      "kind": "source-notice",
+      "bytes": 1046,
+      "sha256": "a19235e1927b7bbf017f0a845c71d78035a81a70f9da1f8ae5e5fd03bf84ed02"
+    },
+    {
+      "path": "data/notices/taipei-101.txt",
+      "kind": "source-notice",
+      "bytes": 1042,
+      "sha256": "c0b791f28c8403ff1f2d69cb2fbbf1e0c9eab96bbdbbc3f472dc0f785880ef5c"
+    },
+    {
+      "path": "data/notices/taj-mahal.txt",
+      "kind": "source-notice",
+      "bytes": 1041,
+      "sha256": "f98d04d16d0dfca6682f7af60bb525dbd2c37f233e874224efb880f47ec42ba5"
+    },
+    {
+      "path": "data/notices/the-gherkin.txt",
+      "kind": "source-notice",
+      "bytes": 1186,
+      "sha256": "12d5ec068e723fdc91fc00d443ae0145ec9b0545dd42429244a5c18c53b80a8b"
+    },
+    {
+      "path": "data/notices/the-shard.txt",
+      "kind": "source-notice",
+      "bytes": 1184,
+      "sha256": "0bfcaa0d1a7f6c8c3e13bd17c74758bdb653b178b70d1c6392f58e08a9f659f2"
+    },
+    {
+      "path": "data/notices/tokyo-skytree.txt",
+      "kind": "source-notice",
+      "bytes": 1045,
+      "sha256": "46819259b5655e7c45868071dfb98ac383528c7d33b365f5161eb6dcd79c8cfc"
+    },
+    {
+      "path": "data/notices/tokyo-tower.txt",
+      "kind": "source-notice",
+      "bytes": 1043,
+      "sha256": "ee5148afdd1c5b3152b309e2f8b8727c8256cb9d646a2431bc07a79827b39d94"
+    },
+    {
+      "path": "data/notices/turning-torso.txt",
+      "kind": "source-notice",
+      "bytes": 1440,
+      "sha256": "6db0c0e0bea5855b2c8a5d80bb50d4e1b1d5a4fdef158d0c98746b5ecea5983f"
+    },
+    {
+      "path": "data/notices/westminster.txt",
+      "kind": "source-notice",
+      "bytes": 1186,
+      "sha256": "d2683bdc08578ce000f75e375066f7cd5e2aa1e30e157c00917b9d16ca56c801"
+    },
+    {
+      "path": "data/notices/white-house.txt",
+      "kind": "source-notice",
+      "bytes": 1050,
+      "sha256": "2a73cc72599d450ef3e779152891b46295f80f6730a76862a69bcd6b07566fd9"
+    },
+    {
+      "path": "data/notices/willis-tower.txt",
+      "kind": "source-notice",
+      "bytes": 1032,
+      "sha256": "90b799ab495c4a45b346b02380644d868f06fa0fb9071a680b53f7c713e77c4b"
+    },
+    {
+      "path": "data/oriental-pearl-tower.json",
+      "kind": "prepared-map",
+      "bytes": 3938802,
+      "sha256": "b4608d7d4e0261de4d6f62e84bb9670163da95af6faccbd23bf34a42919dc98e"
+    },
+    {
+      "path": "data/petronas-towers.json",
+      "kind": "prepared-map",
+      "bytes": 5748634,
+      "sha256": "0434095642e383882e03415f3e3e18858a97e533ae5fefbc18cf34588887e363"
+    },
+    {
+      "path": "data/sagrada-familia.json",
+      "kind": "prepared-map",
+      "bytes": 39040653,
+      "sha256": "667cc81f356d5db5cc9590062133ee26d00675d5cb92bd0f18121877a5f12c16"
+    },
+    {
+      "path": "data/salesforce-tower.json",
+      "kind": "prepared-map",
+      "bytes": 4834447,
+      "sha256": "ce944ba9b407c57363e5705af04789320f6b54526fb9ef3655f7cdbfdc49fe39"
+    },
+    {
+      "path": "data/shanghai-tower.json",
+      "kind": "prepared-map",
+      "bytes": 3807198,
+      "sha256": "c825d9221203f5d377f31a32d3040182a1c53a0a9efebc52af6f810ce7be7c6f"
+    },
+    {
+      "path": "data/sources.html",
+      "kind": "data-offer",
+      "bytes": 15930,
+      "sha256": "15bd100c86dd64f8a9b01dfa10a181c17557152c92bb59dbfb2f88f6f16dd1a3"
+    },
+    {
+      "path": "data/space-needle.json",
+      "kind": "prepared-map",
+      "bytes": 4728939,
+      "sha256": "ba2023ba4bed07921942f1e1cb3902b163d4a6b3fd1e784b681826b2fb5c6722"
+    },
+    {
+      "path": "data/st-peters.json",
+      "kind": "prepared-map",
+      "bytes": 5615783,
+      "sha256": "f568115a3824628d57c28e4a8989da2f3de77c4c6e4c8e6f8bb24708f712263f"
+    },
+    {
+      "path": "data/sydney-opera-house.json",
+      "kind": "prepared-map",
+      "bytes": 8302304,
+      "sha256": "50e7e21572c424554b3bb9b674f5652e270a00bdc38b80d28c07353035c39801"
+    },
+    {
+      "path": "data/table-mountain.json",
+      "kind": "prepared-map",
+      "bytes": 1792629,
+      "sha256": "c99f162c786173408208026f4e4d0c675cdf956b4962f2c6915a359ec64ab15a"
+    },
+    {
+      "path": "data/taipei-101.json",
+      "kind": "prepared-map",
+      "bytes": 7118075,
+      "sha256": "db896cd47f793fd9e402769224527a8250a8f9e8d9543d75a27181bb880ecb12"
+    },
+    {
+      "path": "data/taj-mahal.json",
+      "kind": "prepared-map",
+      "bytes": 701546,
+      "sha256": "33d2e5497b5d7b5b78528b351d749b18b5051744899398a12bf47ca97ce05215"
+    },
+    {
+      "path": "data/terrain/abraj-al-bait.json",
+      "kind": "prepared-terrain",
+      "bytes": 406892,
+      "sha256": "933e33652bf89fcc9f3483b2f5468603cff0767c25ebc85493dd17c19f9ff9ca"
+    },
+    {
+      "path": "data/terrain/acropolis.json",
+      "kind": "prepared-terrain",
+      "bytes": 400377,
+      "sha256": "6ae8d9740dc41a36ef2659b02fc922b840561c480a9b4570295be56477890cdd"
+    },
+    {
+      "path": "data/terrain/burj-khalifa.json",
+      "kind": "prepared-terrain",
+      "bytes": 265942,
+      "sha256": "188811600219e5cdaedbefed751353fc42299bb1c81130ee2d1bdb22fe343d5d"
+    },
+    {
+      "path": "data/terrain/cn-tower.json",
+      "kind": "prepared-terrain",
+      "bytes": 356992,
+      "sha256": "0270330adfcd52b61d2600c168edddd37d2bf5ee53959866394728d58d36278e"
+    },
+    {
+      "path": "data/terrain/colosseum.json",
+      "kind": "prepared-terrain",
+      "bytes": 385615,
+      "sha256": "a20ded61931318d7cba340d64e3786bc09b2fedc7b0d054163f31684d82b6314"
+    },
+    {
+      "path": "data/terrain/eiffel-tower.json",
+      "kind": "prepared-terrain",
+      "bytes": 383812,
+      "sha256": "9f4e616596e100e9b97a396c54e497be27bf7aef00a8b36a24707c2f373783ac"
+    },
+    {
+      "path": "data/terrain/empire-state-building.json",
+      "kind": "prepared-terrain",
+      "bytes": 334463,
+      "sha256": "8555dfc9cbacfb5b762be7636754ae19a4e5bfd49ee3662e243ded92a491c67f"
+    },
+    {
+      "path": "data/terrain/financial-district.json",
+      "kind": "prepared-terrain",
+      "bytes": 295898,
+      "sha256": "641c77fd83e34b8e7e4c5e86a6fd686c8a109d11ce975b87ab18dadb62976ba2"
+    },
+    {
+      "path": "data/terrain/golden-gate-bridge.json",
+      "kind": "prepared-terrain",
+      "bytes": 232672,
+      "sha256": "0262c72f0dca59662261bb1303d92e37246f02f077e2b97ea4acfd1c2661758f"
+    },
+    {
+      "path": "data/terrain/great-pyramid.json",
+      "kind": "prepared-terrain",
+      "bytes": 390596,
+      "sha256": "ea5c99823f14e533e2d4f1cc4b44129802ec34449655a46417dabb8380fef6ab"
+    },
+    {
+      "path": "data/terrain/greater-lafayette.json",
+      "kind": "prepared-terrain",
+      "bytes": 381860,
+      "sha256": "da0b3fef09e9b38bf1a82c1f1a5a3a1f0b1fe8e7b17a8a0c3f1fe670f46209a1"
+    },
+    {
+      "path": "data/terrain/index.json",
+      "kind": "catalog",
+      "bytes": 2898,
+      "sha256": "a9c14f1d1c917f388ed252aaf112565d8e428193cc447ec969e4a44e0c2fa9c0"
+    },
+    {
+      "path": "data/terrain/john-hancock-center.json",
+      "kind": "prepared-terrain",
+      "bytes": 325999,
+      "sha256": "da26f9925f4fd88e4e37b985604a020719685a6c78d58c9e9734368e7e0b85b1"
+    },
+    {
+      "path": "data/terrain/la-porte-courthouse.json",
+      "kind": "prepared-terrain",
+      "bytes": 355212,
+      "sha256": "445d7e7c3bf603685f1bba7641ec2b82cd6092af73ef918c966c15f335a0930c"
+    },
+    {
+      "path": "data/terrain/lakhta-center.json",
+      "kind": "prepared-terrain",
+      "bytes": 340796,
+      "sha256": "22989b3f8b21cf8353469cebf8bfe294d0f18b94a7210adca2e8fd0d256d3474"
+    },
+    {
+      "path": "data/terrain/lotte-world-tower.json",
+      "kind": "prepared-terrain",
+      "bytes": 359161,
+      "sha256": "a065c8072134722b797c88c709adcad540a6409a987de6763b70b3eede987f84"
+    },
+    {
+      "path": "data/terrain/manifests/abraj-al-bait.json",
+      "kind": "terrain-manifest",
+      "bytes": 1613,
+      "sha256": "876f4e53e8d6ab5c22bb2b31cb6ca9a9dcc71970724f05c7872289ef606173a6"
+    },
+    {
+      "path": "data/terrain/manifests/acropolis.json",
+      "kind": "terrain-manifest",
+      "bytes": 1678,
+      "sha256": "adf17377d8f89134217b0888cfa32f2bb925a166220f8d0959372bdfce765222"
+    },
+    {
+      "path": "data/terrain/manifests/burj-khalifa.json",
+      "kind": "terrain-manifest",
+      "bytes": 1830,
+      "sha256": "bfa6bc9c1a5d90d55df3ec3ee027ed2ac034ed0a8c3b9b2412502c87d74305af"
+    },
+    {
+      "path": "data/terrain/manifests/cn-tower.json",
+      "kind": "terrain-manifest",
+      "bytes": 2360,
+      "sha256": "9ef54ce764e020b458749b828f16c02dced7dbd2cbfda7620369ad8f652df68d"
+    },
+    {
+      "path": "data/terrain/manifests/colosseum.json",
+      "kind": "terrain-manifest",
+      "bytes": 2414,
+      "sha256": "8b269663e880754b24f0be59d3371e73e831c8ef1f67aef546a628568e891e0e"
+    },
+    {
+      "path": "data/terrain/manifests/eiffel-tower.json",
+      "kind": "terrain-manifest",
+      "bytes": 3518,
+      "sha256": "3d1f9e8d971d42d3505349d91e75528257bf66067e0001f2df6449d0ce3c7999"
+    },
+    {
+      "path": "data/terrain/manifests/empire-state-building.json",
+      "kind": "terrain-manifest",
+      "bytes": 2616,
+      "sha256": "255341706a51705aa999a08e135904afca1b301f27d8d342e852df3a6bf586a8"
+    },
+    {
+      "path": "data/terrain/manifests/financial-district.json",
+      "kind": "terrain-manifest",
+      "bytes": 3614,
+      "sha256": "6204a25d021d6d5624b9121a1e3c00e199b3586a63514808dc2fc0c2b269466c"
+    },
+    {
+      "path": "data/terrain/manifests/golden-gate-bridge.json",
+      "kind": "terrain-manifest",
+      "bytes": 1996,
+      "sha256": "631c08b254bfb8df47d574320629d209a082af4ec6a022afdda5b3fdcd067ec0"
+    },
+    {
+      "path": "data/terrain/manifests/great-pyramid.json",
+      "kind": "terrain-manifest",
+      "bytes": 3602,
+      "sha256": "6949f551926c5861419cb6dc93034eceb8c96671981033592059fe9653227c17"
+    },
+    {
+      "path": "data/terrain/manifests/greater-lafayette.json",
+      "kind": "terrain-manifest",
+      "bytes": 5950,
+      "sha256": "85fa688306f038e9330846b08e83c0cec2dda8d76f904fe163edbda86f625bf3"
+    },
+    {
+      "path": "data/terrain/manifests/john-hancock-center.json",
+      "kind": "terrain-manifest",
+      "bytes": 1682,
+      "sha256": "654175a3bcc72517786b5263a295a63e2133f19788b55dc9b8f8921cc0cf3d04"
+    },
+    {
+      "path": "data/terrain/manifests/la-porte-courthouse.json",
+      "kind": "terrain-manifest",
+      "bytes": 2360,
+      "sha256": "01f409eab3712155ef17edbbe5b8f5704de2de6209eba88d0e2453d64a8997a9"
+    },
+    {
+      "path": "data/terrain/manifests/lakhta-center.json",
+      "kind": "terrain-manifest",
+      "bytes": 4196,
+      "sha256": "b2b994856527d019ee74c64dda1c8520f817fca39296c0bc4bfbbe1c22cf616e"
+    },
+    {
+      "path": "data/terrain/manifests/lotte-world-tower.json",
+      "kind": "terrain-manifest",
+      "bytes": 1830,
+      "sha256": "728cd4ca8c5e1be0a973d9758ccbb505f580219fc48fef18a263242d30d8e36d"
+    },
+    {
+      "path": "data/terrain/manifests/marina-bay-sands.json",
+      "kind": "terrain-manifest",
+      "bytes": 1779,
+      "sha256": "e48c7cd2e0d0338243f3a1b1824a911b1dcd9ecaaa97960232c363bf8a140e5f"
+    },
+    {
+      "path": "data/terrain/manifests/merdeka-118.json",
+      "kind": "terrain-manifest",
+      "bytes": 909,
+      "sha256": "5bd3bc011d1795f4b76be9d1580f93453d0eb48c1ff1b99477ea364ce57de35f"
+    },
+    {
+      "path": "data/terrain/manifests/mont-saint-michel.json",
+      "kind": "terrain-manifest",
+      "bytes": 2414,
+      "sha256": "e6323da03b708d0a05b3fa8682f1f839c869bb48a31c22f44646b12bf16179d1"
+    },
+    {
+      "path": "data/terrain/manifests/monument-circle.json",
+      "kind": "terrain-manifest",
+      "bytes": 3527,
+      "sha256": "03d73262553d64d80070842773858245c278c80b2df0a54327117e5f9fbf739e"
+    },
+    {
+      "path": "data/terrain/manifests/mount-fuji.json",
+      "kind": "terrain-manifest",
+      "bytes": 3373,
+      "sha256": "399df689bfbb6c048c48955965c24a364b31795c1282c1d8cbdcd8ed6a98f306"
+    },
+    {
+      "path": "data/terrain/manifests/oriental-pearl-tower.json",
+      "kind": "terrain-manifest",
+      "bytes": 1779,
+      "sha256": "8c9b481dc3f1997b02eb1faeb3c6e3479c146d57eb2073a88e4299f8a7ddfe45"
+    },
+    {
+      "path": "data/terrain/manifests/petronas-towers.json",
+      "kind": "terrain-manifest",
+      "bytes": 909,
+      "sha256": "d076501bad40a27701baa1a705287d2b36743f618a22c5b20840d42849158091"
+    },
+    {
+      "path": "data/terrain/manifests/sagrada-familia.json",
+      "kind": "terrain-manifest",
+      "bytes": 2414,
+      "sha256": "6709619366f898f47a41bf65bdb15d7b5a2cebcdb25c4133df838d19bfe94df3"
+    },
+    {
+      "path": "data/terrain/manifests/salesforce-tower.json",
+      "kind": "terrain-manifest",
+      "bytes": 1834,
+      "sha256": "0ee36c813036e960d41fe6bfa64bdb9968e5a589d2fc164907607f6113323246"
+    },
+    {
+      "path": "data/terrain/manifests/shanghai-tower.json",
+      "kind": "terrain-manifest",
+      "bytes": 1779,
+      "sha256": "122301384cb724fc359aec211aff0e9e22fd16ad21d9f75785b1868429c13eae"
+    },
+    {
+      "path": "data/terrain/manifests/space-needle.json",
+      "kind": "terrain-manifest",
+      "bytes": 3206,
+      "sha256": "1d99b70e44e67d1ab96798ba6983c660e8ac4ce4685ba7fe08d499393247e8c4"
+    },
+    {
+      "path": "data/terrain/manifests/st-peters.json",
+      "kind": "terrain-manifest",
+      "bytes": 2414,
+      "sha256": "8b778847865c0409ea5b98b33c2c8d48d3e7b20cb3d7bfa18c154ab8a06a8655"
+    },
+    {
+      "path": "data/terrain/manifests/sydney-opera-house.json",
+      "kind": "terrain-manifest",
+      "bytes": 2636,
+      "sha256": "3a971c2b52133e61d1c916abe5def82dca547fbce3b41cb83b07c938d8e38414"
+    },
+    {
+      "path": "data/terrain/manifests/table-mountain.json",
+      "kind": "terrain-manifest",
+      "bytes": 2539,
+      "sha256": "330fe8d29127df44344bd3dc9f6516fa1ff9c34b0f26a1db85dec7ac43150665"
+    },
+    {
+      "path": "data/terrain/manifests/taipei-101.json",
+      "kind": "terrain-manifest",
+      "bytes": 1728,
+      "sha256": "8311316a020ab97cd62f877b0d324d97e0cb8b4fdcb4836247d945a1d8a78a6a"
+    },
+    {
+      "path": "data/terrain/manifests/taj-mahal.json",
+      "kind": "terrain-manifest",
+      "bytes": 1779,
+      "sha256": "b023cc97ce4c4516b9068b72efa83b46cf9ed49448419717a54ec6ea37648855"
+    },
+    {
+      "path": "data/terrain/manifests/the-gherkin.json",
+      "kind": "terrain-manifest",
+      "bytes": 1883,
+      "sha256": "c2c595cd26e7ef8da9e21af4d31c6633412a0803582806adf41ea855459706c3"
+    },
+    {
+      "path": "data/terrain/manifests/the-shard.json",
+      "kind": "terrain-manifest",
+      "bytes": 1883,
+      "sha256": "0940fe07fc3008145eea6934fd7d7d5f588ed3d3d5e1bde161188474ac43b53c"
+    },
+    {
+      "path": "data/terrain/manifests/tokyo-skytree.json",
+      "kind": "terrain-manifest",
+      "bytes": 2585,
+      "sha256": "f4a6c7d7ac5939a5a36c01d736683c92c6bc0356da7b4602e35e7d3295ab4528"
+    },
+    {
+      "path": "data/terrain/manifests/tokyo-tower.json",
+      "kind": "terrain-manifest",
+      "bytes": 1728,
+      "sha256": "b9e5a2fab21b783cc3799241c06fb37085a2c81206cd37ae015ac5bf8d5f0def"
+    },
+    {
+      "path": "data/terrain/manifests/turning-torso.json",
+      "kind": "terrain-manifest",
+      "bytes": 4553,
+      "sha256": "0a248bea3da1134d7e14eab22b9989d602ccaa6e4154db9976c1091411ff0c70"
+    },
+    {
+      "path": "data/terrain/manifests/westminster.json",
+      "kind": "terrain-manifest",
+      "bytes": 3797,
+      "sha256": "fd4fd8532e0a282ba50d1cb22f9942a0c3878d655d522a362979d17a40a7a338"
+    },
+    {
+      "path": "data/terrain/manifests/white-house.json",
+      "kind": "terrain-manifest",
+      "bytes": 3326,
+      "sha256": "cd335b8430eb7e59327c7568d4ca903c1b4418a0a780f2a459b9ffbbafc8428f"
+    },
+    {
+      "path": "data/terrain/manifests/willis-tower.json",
+      "kind": "terrain-manifest",
+      "bytes": 1682,
+      "sha256": "e2feb940c95ac5080bc478e58412c986eabe9707e61d64638371aa678cbe6947"
+    },
+    {
+      "path": "data/terrain/marina-bay-sands.json",
+      "kind": "prepared-terrain",
+      "bytes": 305484,
+      "sha256": "0319bfa6a9cf3a48974396ba465400a74b4204be2daf741fd98c84919090f185"
+    },
+    {
+      "path": "data/terrain/merdeka-118.json",
+      "kind": "prepared-terrain",
+      "bytes": 382054,
+      "sha256": "020ec45ce70e64d6fddc565a8da533fb14ae68a9381841240bfbd6ac00b59c2b"
+    },
+    {
+      "path": "data/terrain/mont-saint-michel.json",
+      "kind": "prepared-terrain",
+      "bytes": 238240,
+      "sha256": "d270ede7f6ec578f23884523298c835587ece7416a3721b2f5a17b4b54874b3d"
+    },
+    {
+      "path": "data/terrain/monument-circle.json",
+      "kind": "prepared-terrain",
+      "bytes": 375104,
+      "sha256": "0d8d2cdba58f2fcce685af6594f7cdf17ea9b9e40534a0a5380b6d227f5c8804"
+    },
+    {
+      "path": "data/terrain/mount-fuji.json",
+      "kind": "prepared-terrain",
+      "bytes": 489815,
+      "sha256": "8500978633a3c2b8f29649bbe7e40b20fca3c8622aaf54c5c58837b2b76c01f0"
+    },
+    {
+      "path": "data/terrain/oriental-pearl-tower.json",
+      "kind": "prepared-terrain",
+      "bytes": 334520,
+      "sha256": "0982e7c23605f8e99a342d93e60899dd90b8162cf3c68de4317a17c0d4d86845"
+    },
+    {
+      "path": "data/terrain/petronas-towers.json",
+      "kind": "prepared-terrain",
+      "bytes": 380258,
+      "sha256": "1dfafa846bb6e4e8c55598c8dd4ddd4f3d4022098dc7c60c6cfa95dcc89604be"
+    },
+    {
+      "path": "data/terrain/sagrada-familia.json",
+      "kind": "prepared-terrain",
+      "bytes": 396354,
+      "sha256": "3179cca7625e71cecbfb7ec5b6567f1b29a85da0f54d98835cea368764ac970e"
+    },
+    {
+      "path": "data/terrain/salesforce-tower.json",
+      "kind": "prepared-terrain",
+      "bytes": 268960,
+      "sha256": "181cc2ab8886a46c3eaa01a2468d2902449dc40f12df241a54e756878c21ab37"
+    },
+    {
+      "path": "data/terrain/shanghai-tower.json",
+      "kind": "prepared-terrain",
+      "bytes": 331776,
+      "sha256": "fff880853d6376c1ebd471e0155951ba70eb8eef1d16a6435f479b57c3f2dd27"
+    },
+    {
+      "path": "data/terrain/space-needle.json",
+      "kind": "prepared-terrain",
+      "bytes": 342900,
+      "sha256": "0d7a1552ec3ec30e24bfd3d9f51ece0360a2a543950a6f324961680da7e277c4"
+    },
+    {
+      "path": "data/terrain/st-peters.json",
+      "kind": "prepared-terrain",
+      "bytes": 386958,
+      "sha256": "e3a2f24b64a628e055a7724fa70efa4edf74eac5f5406648034ee32763175201"
+    },
+    {
+      "path": "data/terrain/sydney-opera-house.json",
+      "kind": "prepared-terrain",
+      "bytes": 328992,
+      "sha256": "d3573d382d7fce7ed755a72c8582f8bd095111edef04ebc96c7609377a3a1f3a"
+    },
+    {
+      "path": "data/terrain/table-mountain.json",
+      "kind": "prepared-terrain",
+      "bytes": 451135,
+      "sha256": "3251cdf6e9aeb9bbdfa863f98220b2bb3d4e0d0ca1c0d73d8d917ccaf5e1f553"
+    },
+    {
+      "path": "data/terrain/taipei-101.json",
+      "kind": "prepared-terrain",
+      "bytes": 381767,
+      "sha256": "bf39bc33459f3411d05d362abc70fafe6a2068580d2842d6a23ffafcbb824cbb"
+    },
+    {
+      "path": "data/terrain/taj-mahal.json",
+      "kind": "prepared-terrain",
+      "bytes": 388411,
+      "sha256": "e7b4550a937ab29babdaad2c7af55b08a8a078510b42d52099e695113491705f"
+    },
+    {
+      "path": "data/terrain/the-gherkin.json",
+      "kind": "prepared-terrain",
+      "bytes": 350835,
+      "sha256": "3d829562dab4aedb0e3e1fbd3bd23bcffbbd2faff1ce83330a0862f4fda45123"
+    },
+    {
+      "path": "data/terrain/the-shard.json",
+      "kind": "prepared-terrain",
+      "bytes": 333725,
+      "sha256": "10b4671f720f5aa7c5b2f792371c0feb60f3b5eecd7a659ea359cfdaeda0d376"
+    },
+    {
+      "path": "data/terrain/tokyo-skytree.json",
+      "kind": "prepared-terrain",
+      "bytes": 313129,
+      "sha256": "41f74ffe51378ba87b81d1ca97f1ebcb3e6ee58c972a935e7d40004bf55a8e9f"
+    },
+    {
+      "path": "data/terrain/tokyo-tower.json",
+      "kind": "prepared-terrain",
+      "bytes": 361124,
+      "sha256": "7721424db669c8e23c90cde283fbcb53813e49d3ffce2acbdfaacead73adc765"
+    },
+    {
+      "path": "data/terrain/turning-torso.json",
+      "kind": "prepared-terrain",
+      "bytes": 223747,
+      "sha256": "5f730d30ab2fa7fefa166f489b4f9a96f7f371a4052b39fc84228302da06de2e"
+    },
+    {
+      "path": "data/terrain/westminster.json",
+      "kind": "prepared-terrain",
+      "bytes": 335425,
+      "sha256": "676cefbf10d7b625fb68f9b1d52ded88e85801cb493c50db1f4b56b862530167"
+    },
+    {
+      "path": "data/terrain/white-house.json",
+      "kind": "prepared-terrain",
+      "bytes": 365609,
+      "sha256": "d81d7350a0c1cda8a8e910bd43b9175dc6cec8cbaf253ad4f98dcefddc596908"
+    },
+    {
+      "path": "data/terrain/willis-tower.json",
+      "kind": "prepared-terrain",
+      "bytes": 324480,
+      "sha256": "c4f02b27e1b7ee265b444197a54544b15e5e185147211a77625433028b0d2df8"
+    },
+    {
+      "path": "data/the-gherkin.json",
+      "kind": "prepared-map",
+      "bytes": 9370419,
+      "sha256": "762e2731b8ac1aaf4da52b224f8a015a10b711870285edfd9f5eee6141414879"
+    },
+    {
+      "path": "data/the-shard.json",
+      "kind": "prepared-map",
+      "bytes": 9614913,
+      "sha256": "826bd5711e0ff5ee404676322aefb0fed46cc0cbe9151d128fb8581e3978a3fb"
+    },
+    {
+      "path": "data/tokyo-skytree.json",
+      "kind": "prepared-map",
+      "bytes": 22780502,
+      "sha256": "fe1e43f1b7df9e19bf4965cc0450132b08bf9d2266d724fde07d2d0b01548c69"
+    },
+    {
+      "path": "data/tokyo-tower.json",
+      "kind": "prepared-map",
+      "bytes": 6825833,
+      "sha256": "5ccafa6899cf61c4b9b44efb7250334e2e85bfcab98e59e75f5deabe85a03b98"
+    },
+    {
+      "path": "data/turning-torso.json",
+      "kind": "prepared-map",
+      "bytes": 1704383,
+      "sha256": "d65f51f471fe4cd146959706a1335056a38a5222c0ab2e019b0c77e28d27b62c"
+    },
+    {
+      "path": "data/westminster.json",
+      "kind": "prepared-map",
+      "bytes": 16626574,
+      "sha256": "b16f25ab8df3f6e1c45c2e1b3e0d79dcdf6991bf485880e01ea07c29042f30b6"
+    },
+    {
+      "path": "data/white-house.json",
+      "kind": "prepared-map",
+      "bytes": 16600647,
+      "sha256": "cfc2862413cf34510a25b63f3c85f999f7774d5c0f23f10180f517541407a11f"
+    },
+    {
+      "path": "data/willis-tower.json",
+      "kind": "prepared-map",
+      "bytes": 6482525,
+      "sha256": "ad983db52d72053855870766e647d8e9de33ebc623474bcfe7a0f6a90c94a70f"
+    },
+    {
+      "path": "drawing-worker.mjs",
+      "kind": "runtime",
+      "bytes": 1322,
+      "sha256": "9882e2aa673573242548579915316e9fdd652b2698a31299eb499fea80c82689"
+    },
+    {
+      "path": "drawing.mjs",
+      "kind": "runtime",
+      "bytes": 44726,
+      "sha256": "a4f026962c5519e12d421cc9c860ae2c517329d1aca6c11839d625d70782c5f4"
+    },
+    {
+      "path": "export.mjs",
+      "kind": "runtime",
+      "bytes": 9385,
+      "sha256": "c72b06ecb72f9a46764e71a8deed4913fdd2a4e0fec0a55940c8ff4f6fba4501"
+    },
+    {
+      "path": "fit-buildings.mjs",
+      "kind": "runtime",
+      "bytes": 3372,
+      "sha256": "4070bc78d24c61937f3a3b585072a0815634fb13d59c39a41f7686f8f7ba60e1"
+    },
+    {
+      "path": "hero.mjs",
+      "kind": "runtime",
+      "bytes": 7974,
+      "sha256": "0eea14b1e4f1e77c04a79e7eb5cc65cab946dbf8905b5a30e71d1f0167cd3559"
+    },
+    {
+      "path": "index.html",
+      "kind": "runtime",
+      "bytes": 19044,
+      "sha256": "851f3c0cd3d43940127027cc8864601b55c00be4c1031832c4f67418f4432f92"
+    },
+    {
+      "path": "lib/EARCUT-LICENSE.txt",
+      "kind": "notice",
+      "bytes": 738,
+      "sha256": "cd661c432ea8243974e6fde6fc433ebee3e96525ca8b66321b9d9971674ede60"
+    },
+    {
+      "path": "lib/Earcut.mjs",
+      "kind": "runtime",
+      "bytes": 17687,
+      "sha256": "42f2cbfd931818b726466688ba1a1aba739182fe4058772194e53df34985c4b2"
+    },
+    {
+      "path": "lib/THREE-LICENSE.txt",
+      "kind": "notice",
+      "bytes": 1081,
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+    },
+    {
+      "path": "lib/three.module.mjs",
+      "kind": "runtime",
+      "bytes": 684042,
+      "sha256": "54a7a52ddce0ad06fbd1d021fd03b1e1812d946114a2111e1260bcd490c6b840"
+    },
+    {
+      "path": "live-chunk.mjs",
+      "kind": "runtime",
+      "bytes": 2332,
+      "sha256": "a683ab374c5e94e9034b7c92eb59e3129ef966253e4938c29bfd71d24a1a9710"
+    },
+    {
+      "path": "live-geometry-worker.mjs",
+      "kind": "runtime",
+      "bytes": 1177,
+      "sha256": "c727bb84849b09ad8bbabb6b6dee7d6e6f416be11f5bd15f4853720301667dd8"
+    },
+    {
+      "path": "live-geometry.mjs",
+      "kind": "runtime",
+      "bytes": 6957,
+      "sha256": "fdcf9ba758fc36d302640560b5d27ebc8d26464043941f6f3da586fb72e7586f"
+    },
+    {
+      "path": "live-view.mjs",
+      "kind": "runtime",
+      "bytes": 21785,
+      "sha256": "74781e59bde1b88b5eafda44c24068bfda55803f7c0fc8757fa35931cfed1d99"
+    },
+    {
+      "path": "map-zoom.mjs",
+      "kind": "runtime",
+      "bytes": 1638,
+      "sha256": "bff0c3e91420a74dfa82c5e1858c29a83d6415c9aa79930efd1dd8e1d8f573f9"
+    },
+    {
+      "path": "model-package.mjs",
+      "kind": "runtime",
+      "bytes": 2302,
+      "sha256": "1de6871ade482dbaee8fc4e4ddf7e34242665ae684b95eadc67b21190aec149f"
+    },
+    {
+      "path": "output-style.mjs",
+      "kind": "runtime",
+      "bytes": 1746,
+      "sha256": "c309bab1bea79a6437ae92f32addb25aabdca0fde0f0bae8aea07046d1c3a976"
+    },
+    {
+      "path": "paper-sizes.mjs",
+      "kind": "runtime",
+      "bytes": 448,
+      "sha256": "c59c678a61b0cbb6742b69c246cbef934b48e7f1e99c987700b9fadc93718fc5"
+    },
+    {
+      "path": "pinch.mjs",
+      "kind": "runtime",
+      "bytes": 2671,
+      "sha256": "3da17559c6b8716412797d7f82107ae30115d52bc05289d5274ba0ab6ccc5b74"
+    },
+    {
+      "path": "plotter-colors.mjs",
+      "kind": "runtime",
+      "bytes": 973,
+      "sha256": "2d24db3c23380132c606133d8ccedb98f96080ff1573121020dc004388e7543c"
+    },
+    {
+      "path": "projection.mjs",
+      "kind": "runtime",
+      "bytes": 7049,
+      "sha256": "cf4f483b4fef430fdac980f465d062dbc1bda34cb1994227fc3fd0270c9dd295"
+    },
+    {
+      "path": "raster-export.mjs",
+      "kind": "runtime",
+      "bytes": 7533,
+      "sha256": "d86b91ef4e6e1098790daeb53bc582ba22d6ba2429ac0fd3ed8838fac71cb19c"
+    },
+    {
+      "path": "README.md",
+      "kind": "delivery-guide",
+      "bytes": 1645,
+      "sha256": "c3df0beba9469dbc3b633c39b9da5d7068f2af225ba07c326034dfb8f677e209"
+    },
+    {
+      "path": "road-style.mjs",
+      "kind": "runtime",
+      "bytes": 261,
+      "sha256": "ec5df8ae99a2b9536ae03362316c518865efb3311121851ce066689180467c75"
+    },
+    {
+      "path": "server.mjs",
+      "kind": "local-preview",
+      "bytes": 1241,
+      "sha256": "243fdac71fe7cbb965d2a9e70935b4a746dae0c35d2a703b30b8bc81f4ec3e16"
+    },
+    {
+      "path": "studio-controls.mjs",
+      "kind": "runtime",
+      "bytes": 2035,
+      "sha256": "a73a506d6b704beeea237d17cbdb67ea31d0a7db0acc63fc50358a5cb75b7d33"
+    },
+    {
+      "path": "studio-state.mjs",
+      "kind": "runtime",
+      "bytes": 4414,
+      "sha256": "5e21ea0754e9ad7dda57ff27465759efdf5bd904b6bb471591d8a51d35c38629"
+    },
+    {
+      "path": "studio.css",
+      "kind": "runtime",
+      "bytes": 17591,
+      "sha256": "e493922ae910d26d789a98b6d8690de8ce37c846db8e5092f2ff7276f119bdd1"
+    },
+    {
+      "path": "study-origin.mjs",
+      "kind": "runtime",
+      "bytes": 442,
+      "sha256": "6802d90b7d68b446f8d48c436a17022a8de72b3175cb1fd7bb65c890a0a8fba2"
+    },
+    {
+      "path": "surface-style.mjs",
+      "kind": "runtime",
+      "bytes": 3134,
+      "sha256": "133c028b2107ad2963a5c2b6418780af8b361bac599a50c0c2833917533c7bd6"
+    },
+    {
+      "path": "terrain-solid.mjs",
+      "kind": "runtime",
+      "bytes": 2208,
+      "sha256": "3f14be69e3c4360dd1c961292919c136ee73153dc52d970c526ffa1586d213b8"
+    },
+    {
+      "path": "terrain.mjs",
+      "kind": "runtime",
+      "bytes": 14455,
+      "sha256": "9bc3d3e2454dafa3fc082855087495aa096c0baa4e68ec9d650ff31b49f55532"
+    },
+    {
+      "path": "themes.mjs",
+      "kind": "runtime",
+      "bytes": 3417,
+      "sha256": "2d86380671abafdf5aea366e09182f60024f0a9e802c347d0b680da0c04afb8b"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "kind": "notice",
+      "bytes": 2603,
+      "sha256": "43d851c4bb3d6990bfaf93ba8d0038166d0d757bb663ed6e01794c74610dd306"
+    },
+    {
+      "path": "tree-spacing.mjs",
+      "kind": "runtime",
+      "bytes": 2233,
+      "sha256": "a0456ea66b538f102b4db114190a6e0cb581a26c1035076937307f36486b02f1"
+    },
+    {
+      "path": "water-boundary.mjs",
+      "kind": "runtime",
+      "bytes": 4053,
+      "sha256": "eeb8c622ebf4b2d817f9c620d4d80d1017263799c0913321093dab5485d5f169"
+    }
+  ]
+}

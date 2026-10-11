@@ -1,0 +1,48 @@
+{
+  "complete": true,
+  "verifiedAt": "2026-10-10T06:48:05.244Z",
+  "method": "AWS response imagery headers verified against unchanged cached PNG bytes",
+  "providers": [
+    "ned_topobathy"
+  ],
+  "tiles": [
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/1308/3164.png",
+      "sha256": "5f34e8220562fe5c43b0f02242c75921e5d0ad05f4987a9a6a005c58d4ee3e84",
+      "etag": "8664ed4fe1f34ddf3dfedd8c57458d03",
+      "versionId": "7x9FGgn4KofFNP0tLbSynlMIVwlBeMjn",
+      "imagerySources": [
+        "ned_topobathy/ned19_n38x00_w122x50_ca_sanfrancisco_topobathy_2010.tif",
+        "ned_topobathy/ned19_n38x00_w122x75_ca_sanfrancisco_topobathy_2010.tif"
+      ]
+    },
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/1309/3164.png",
+      "sha256": "43a20d3c4c6d74a33736789c559efd590865d82c3e8b8b0a80c640811828fb20",
+      "etag": "77155e190f859cb8e7ff2d52e3d9ea88",
+      "versionId": "OFPhXZi4h3qMCUy6131xZI7yypST0e89",
+      "imagerySources": [
+        "ned_topobathy/ned19_n38x00_w122x50_ca_sanfrancisco_topobathy_2010.tif"
+      ]
+    },
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/1308/3165.png",
+      "sha256": "af60442eb5623775e029ce07806c2ddca3a0aa2c35ee1443e34419ddf0375ad6",
+      "etag": "62b33fbe01aca81b40edbcf9240d23d8",
+      "versionId": "3J3z84lG.4XxcOSAj.U973VGMkhDzXSe",
+      "imagerySources": [
+        "ned_topobathy/ned19_n38x00_w122x50_ca_sanfrancisco_topobathy_2010.tif",
+        "ned_topobathy/ned19_n38x00_w122x75_ca_sanfrancisco_topobathy_2010.tif"
+      ]
+    },
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/1309/3165.png",
+      "sha256": "77903a71fd0e83a6d34afb8ac3d0ca590e5e9770308d31602d15a71cf1f23956",
+      "etag": "4f09c1f02cb094e50f2b677a41deab67",
+      "versionId": "wb758VknGzjrs_6bMXoFFylJ2XkRPgDh",
+      "imagerySources": [
+        "ned_topobathy/ned19_n38x00_w122x50_ca_sanfrancisco_topobathy_2010.tif"
+      ]
+    }
+  ]
+}

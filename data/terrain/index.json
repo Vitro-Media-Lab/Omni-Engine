@@ -1,0 +1,158 @@
+[
+  {
+    "id": "financial-district",
+    "file": "financial-district.json"
+  },
+  {
+    "id": "monument-circle",
+    "file": "monument-circle.json"
+  },
+  {
+    "id": "eiffel-tower",
+    "file": "eiffel-tower.json"
+  },
+  {
+    "id": "great-pyramid",
+    "file": "great-pyramid.json"
+  },
+  {
+    "id": "la-porte-courthouse",
+    "file": "la-porte-courthouse.json"
+  },
+  {
+    "id": "westminster",
+    "file": "westminster.json"
+  },
+  {
+    "id": "colosseum",
+    "file": "colosseum.json"
+  },
+  {
+    "id": "st-peters",
+    "file": "st-peters.json"
+  },
+  {
+    "id": "sagrada-familia",
+    "file": "sagrada-familia.json"
+  },
+  {
+    "id": "burj-khalifa",
+    "file": "burj-khalifa.json"
+  },
+  {
+    "id": "sydney-opera-house",
+    "file": "sydney-opera-house.json"
+  },
+  {
+    "id": "taj-mahal",
+    "file": "taj-mahal.json"
+  },
+  {
+    "id": "empire-state-building",
+    "file": "empire-state-building.json"
+  },
+  {
+    "id": "willis-tower",
+    "file": "willis-tower.json"
+  },
+  {
+    "id": "john-hancock-center",
+    "file": "john-hancock-center.json"
+  },
+  {
+    "id": "cn-tower",
+    "file": "cn-tower.json"
+  },
+  {
+    "id": "space-needle",
+    "file": "space-needle.json"
+  },
+  {
+    "id": "tokyo-skytree",
+    "file": "tokyo-skytree.json"
+  },
+  {
+    "id": "tokyo-tower",
+    "file": "tokyo-tower.json"
+  },
+  {
+    "id": "taipei-101",
+    "file": "taipei-101.json"
+  },
+  {
+    "id": "shanghai-tower",
+    "file": "shanghai-tower.json"
+  },
+  {
+    "id": "petronas-towers",
+    "file": "petronas-towers.json"
+  },
+  {
+    "id": "merdeka-118",
+    "file": "merdeka-118.json"
+  },
+  {
+    "id": "lakhta-center",
+    "file": "lakhta-center.json"
+  },
+  {
+    "id": "the-shard",
+    "file": "the-shard.json"
+  },
+  {
+    "id": "the-gherkin",
+    "file": "the-gherkin.json"
+  },
+  {
+    "id": "turning-torso",
+    "file": "turning-torso.json"
+  },
+  {
+    "id": "marina-bay-sands",
+    "file": "marina-bay-sands.json"
+  },
+  {
+    "id": "oriental-pearl-tower",
+    "file": "oriental-pearl-tower.json"
+  },
+  {
+    "id": "lotte-world-tower",
+    "file": "lotte-world-tower.json"
+  },
+  {
+    "id": "abraj-al-bait",
+    "file": "abraj-al-bait.json"
+  },
+  {
+    "id": "salesforce-tower",
+    "file": "salesforce-tower.json"
+  },
+  {
+    "id": "golden-gate-bridge",
+    "file": "golden-gate-bridge.json"
+  },
+  {
+    "id": "acropolis",
+    "file": "acropolis.json"
+  },
+  {
+    "id": "mont-saint-michel",
+    "file": "mont-saint-michel.json"
+  },
+  {
+    "id": "table-mountain",
+    "file": "table-mountain.json"
+  },
+  {
+    "id": "mount-fuji",
+    "file": "mount-fuji.json"
+  },
+  {
+    "id": "greater-lafayette",
+    "file": "greater-lafayette.json"
+  },
+  {
+    "id": "white-house",
+    "file": "white-house.json"
+  }
+]

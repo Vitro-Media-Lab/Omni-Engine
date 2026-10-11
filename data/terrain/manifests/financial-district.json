@@ -1,0 +1,93 @@
+{
+  "complete": true,
+  "verifiedAt": "2026-10-10T06:48:05.242Z",
+  "method": "AWS response imagery headers verified against unchanged cached PNG bytes",
+  "providers": [
+    "ned",
+    "ned13",
+    "srtm",
+    "gmted"
+  ],
+  "tiles": [
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/2410/3079.png",
+      "sha256": "6be68473eb6cf0e5f735edd48443679fd96dab8106f9a06c74e028739c578e54",
+      "etag": "0554735d091476d52449e8e23d2c10c3",
+      "versionId": "CCpo.DFd2Ly0fG_gNok8DcLgTyX95HwT",
+      "imagerySources": [
+        "ned/ned19_n40x75_w074x25_nj_northeast_2007.tif",
+        "ned13/USGS_NED_13_n41w075_IMG.tif",
+        "srtm/N40W075.tif",
+        "gmted/30N090W_20101117_gmted_mea075.tif",
+        "gmted/30N090W_20101117_gmted_mea300.tif"
+      ]
+    },
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/2411/3079.png",
+      "sha256": "5b4d908d302c904f7e84287a8d3b1b405763f668f2745d5155fac22f8a607829",
+      "etag": "7118368dff78de6cd014e8427c7c264b",
+      "versionId": "Av4GMim4Typ9WBLzBl.BRVYLG6Pl38l6",
+      "imagerySources": [
+        "ned/ned19_n40x75_w074x25_nj_northeast_2007.tif",
+        "ned13/USGS_NED_13_n41w075_IMG.tif",
+        "srtm/N40W075.tif",
+        "gmted/30N090W_20101117_gmted_mea075.tif",
+        "gmted/30N090W_20101117_gmted_mea300.tif"
+      ]
+    },
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/2412/3079.png",
+      "sha256": "0ae7def82dc2369871b027ac35114f74d89f8146ccc5a2946e17b3d4fb256976",
+      "etag": "0db35c5578bb54b2314d9ff62bef0990",
+      "versionId": "QSWl1v0MCZhoA4A5TIOQSydPOSNwRfC3",
+      "imagerySources": [
+        "ned13/USGS_NED_13_n41w074_IMG.tif",
+        "ned13/USGS_NED_13_n41w075_IMG.tif",
+        "srtm/N40W074.tif",
+        "srtm/N40W075.tif",
+        "gmted/30N090W_20101117_gmted_mea075.tif",
+        "gmted/30N090W_20101117_gmted_mea300.tif"
+      ]
+    },
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/2410/3080.png",
+      "sha256": "e7a59a7f0d4854195a76ff3c2fc505ed75f17b9391a8be00fb428a3c909011a0",
+      "etag": "7c8b9d845e5ef7b1dc927ffde3d96868",
+      "versionId": "W26z7f6jRVxamvesAce.8RS..oCcLcRu",
+      "imagerySources": [
+        "ned/ned19_n40x75_w074x25_nj_northeast_2007.tif",
+        "ned13/USGS_NED_13_n41w075_IMG.tif",
+        "srtm/N40W075.tif",
+        "gmted/30N090W_20101117_gmted_mea075.tif",
+        "gmted/30N090W_20101117_gmted_mea300.tif"
+      ]
+    },
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/2411/3080.png",
+      "sha256": "f520472d9064bd8af7d7009e25d945b6673b89993c47ef8850e0b754e0af36c4",
+      "etag": "4901a7a55ba21742f5837669bd4ee43b",
+      "versionId": "9e45JNobDKsOGuNAbuvJPVIByafNg6mN",
+      "imagerySources": [
+        "ned/ned19_n40x75_w074x25_nj_northeast_2007.tif",
+        "ned13/USGS_NED_13_n41w075_IMG.tif",
+        "srtm/N40W075.tif",
+        "gmted/30N090W_20101117_gmted_mea075.tif",
+        "gmted/30N090W_20101117_gmted_mea300.tif"
+      ]
+    },
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/2412/3080.png",
+      "sha256": "d31f0b439aeed1b0632370f75e16c7871a807dcf8831d6ce6bef1115173c6d56",
+      "etag": "52bd2d39817e709aa3c35c1f31c6b166",
+      "versionId": "8QgJ04pCogtAsMaFm8lDwaggpiZcb14J",
+      "imagerySources": [
+        "ned13/USGS_NED_13_n41w074_IMG.tif",
+        "ned13/USGS_NED_13_n41w075_IMG.tif",
+        "srtm/N40W074.tif",
+        "srtm/N40W075.tif",
+        "gmted/30N090W_20101117_gmted_mea075.tif",
+        "gmted/30N090W_20101117_gmted_mea300.tif"
+      ]
+    }
+  ]
+}

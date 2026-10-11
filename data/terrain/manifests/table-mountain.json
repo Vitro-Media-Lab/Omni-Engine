@@ -1,0 +1,70 @@
+{
+  "complete": true,
+  "verifiedAt": "2026-10-10T06:48:05.334Z",
+  "method": "AWS response imagery headers verified against unchanged cached PNG bytes",
+  "providers": [
+    "srtm",
+    "gmted"
+  ],
+  "tiles": [
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/4514/4917.png",
+      "sha256": "fd47188bfd90dca64e5bccb9931980035e27935535e4ce698d40b3a494775945",
+      "etag": "28995d2848d60ca8fcc0c17ab93da630",
+      "versionId": "5zZ8EpceBJLyp1_KbjU6lcpmY.hmMCM9",
+      "imagerySources": [
+        "srtm/S34E018.tif",
+        "gmted/50S000E_20101117_gmted_mea075.tif"
+      ]
+    },
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/4515/4917.png",
+      "sha256": "1022cd8628fa29ae3ffdcd34ba2e819cdab489a22e062b11f440fb013366d145",
+      "etag": "c8c8241b7964e780bac0dccb100bb178",
+      "versionId": "hUtOMzHJ5085.mVWdX_9y6rd2Z4xPyQo",
+      "imagerySources": [
+        "srtm/S34E018.tif",
+        "gmted/50S000E_20101117_gmted_mea075.tif"
+      ]
+    },
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/4514/4918.png",
+      "sha256": "578af5e4dc5e39eb552a0a8b0e2b0215acb093b773948a52446e5be6b22f5bd0",
+      "etag": "9e57dbe71064d7b1e3de2341568bba50",
+      "versionId": "5C2FXb63qbGY6aorGJtU2njeYw6AZDCc",
+      "imagerySources": [
+        "srtm/S34E018.tif",
+        "gmted/50S000E_20101117_gmted_mea075.tif"
+      ]
+    },
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/4515/4918.png",
+      "sha256": "4c7a8e9fe62e14c6aac11e29ae98c43ed2ba736ca37845d0be140e417522546a",
+      "etag": "badfb54910683e6ce25c42864d8af04e",
+      "versionId": "9_AAiHCD2TnPMu73XVw0SDQvj9NO9T9Q",
+      "imagerySources": [
+        "srtm/S34E018.tif"
+      ]
+    },
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/4514/4919.png",
+      "sha256": "7160e2ae4d3a38fdc38c0da17cfc76ec4c2425015b94f6692367ffb96f264992",
+      "etag": "0cdaa92c74833a7a146443ed3c95ba8c",
+      "versionId": "o29wgzrjcOoVMVKTnoPRUfEbU5ADFmxj",
+      "imagerySources": [
+        "srtm/S35E018.tif",
+        "srtm/S34E018.tif"
+      ]
+    },
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/4515/4919.png",
+      "sha256": "c910fb3eefcc49ffb2648a0ae63052fb5177a9a3a060cc85783c52830306fc59",
+      "etag": "160c26cdfdef08c1ac7c5d16a7e24879",
+      "versionId": "66aw9CHTW6K5GNrNHpNrruLdL2xH4gnf",
+      "imagerySources": [
+        "srtm/S35E018.tif",
+        "srtm/S34E018.tif"
+      ]
+    }
+  ]
+}

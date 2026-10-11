@@ -1,17 +1,136 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vitro Omni-Engine</title>
-    <style>
-      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-      html, body, #root { width: 100%; height: 100%; overflow: hidden; background: #000; }
-    </style>
-    <script type="module" crossorigin src="/assets/index-CKX6hYav.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-svQV43gB.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f4f3ef">
+  <title>Omni Engine V3 · Drawing studio</title>
+  <link rel="stylesheet" href="./studio.css">
+</head>
+<body>
+  <header class="app-header">
+    <a class="brand" href="./"><span class="brand-mark">V</span><span>OMNI <b>ENGINE</b><small>VITRO MEDIA LAB / V3</small></span></a>
+    <div class="workspace-name"><span class="status-dot"></span> Architectural drawing studio</div>
+    <div class="header-actions"><button id="save-project" class="quiet">Save project</button><button id="open-project" class="quiet">Open project</button><button id="export-main" class="primary">Export drawing <span>↗</span></button></div>
+  </header>
+  <main class="app-layout">
+    <aside class="library">
+      <div class="eyebrow">STUDY LIBRARY</div><h1>A place on paper.</h1><p class="intro">Architectural drawings, made yours.</p>
+      <label class="field-label" for="site-select">Study area</label><select id="site-select" aria-label="Study area"><option>Loading local maps…</option></select>
+      <div id="site-meta" class="meta-note">Preparing map data</div>
+      <button id="import-map" class="outline full">＋ Import map GeoJSON</button>
+      <p class="hint import-hint">Add a whole study here. Add an individual building under Hero building.</p>
+      <div class="section-rule"></div><div class="eyebrow">COLOR THEMES</div>
+      <div class="style-grid" role="group" aria-label="Drawing styles">
+        <button class="style-card" data-style="ink"><span class="swatch ink"><i></i><i></i><i></i></span><strong>Technical ink</strong><small>Crisp / measured</small></button>
+        <button class="style-card active" data-style="graphite"><span class="swatch graphite"><i></i><i></i><i></i></span><strong>Graphite study</strong><small>Soft / exploratory</small></button>
+        <button class="style-card" data-style="blueprint"><span class="swatch blueprint"><i></i><i></i><i></i></span><strong>Blueprint</strong><small>White / indigo</small></button>
+        <button class="style-card" data-style="figure"><span class="swatch figure"><i></i><i></i><i></i></span><strong>Figure ground</strong><small>Solid / spatial</small></button>
+        <button class="style-card" data-style="survey-london"><span class="swatch survey-london"><i></i><i></i><i></i></span><strong>London</strong><small>Street ink / mist blue</small></button>
+        <button class="style-card" data-style="survey-rome"><span class="swatch survey-rome"><i></i><i></i><i></i></span><strong>Rome</strong><small>White city / night water</small></button>
+        <button class="style-card" data-style="survey-liberty"><span class="swatch survey-liberty"><i></i><i></i><i></i></span><strong>Liberty</strong><small>Dark masses / soft blue</small></button>
+      </div>
+      <p class="hint">Themes change colors. Your framing and drawing settings stay in place.</p>
+      <div class="library-foot"><span class="tiny-mark">V / M / L</span><p>Geography → drawing → object</p><a href="./data/sources.html" target="_blank" rel="noopener">Data sources & attribution ↗</a><p>© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap contributors</a><br><a href="https://registry.opendata.aws/terrain-tiles/" target="_blank" rel="noopener">AWS Terrain Tiles</a> / <a href="https://github.com/tilezen/joerd/blob/master/docs/attribution.md" target="_blank" rel="noopener">Tilezen terrain attribution</a></p></div>
+    </aside>
+    <section class="drawing-workspace" aria-label="Drawing workspace">
+      <div class="workspace-toolbar"><div class="view-tabs" role="group" aria-label="Drawing view"><button data-view="plan" class="active"><span>Plan · 2D</span></button><button data-view="axon"><span>Axon · 3D</span></button></div><div class="nav-tabs" role="group" aria-label="Map navigation"><button data-nav="pan" class="active" aria-pressed="true">Pan</button><button data-nav="rotate" aria-pressed="false">Rotate</button></div><div class="workspace-tools"><span id="sheet-label">A3 · landscape</span><button id="zoom-out" aria-label="Zoom map out">−</button><button id="zoom-fit" title="Fit the starting study area">Fit area</button><button id="zoom-in" aria-label="Zoom map in">＋</button></div></div>
+      <div class="sheet-stage" id="sheet-stage"><div id="drawing-sheet" class="drawing-sheet" aria-label="Architectural sheet preview" tabindex="0"><div class="loading-message">Preparing your drawing…</div></div></div>
+      <footer class="workspace-footer"><span><span class="status-dot"></span><span id="drawing-status">Loading geometry</span></span><span id="drawing-count">—</span><span id="scale-status">Physical units · mm</span></footer>
+    </section>
+    <aside class="inspector">
+      <div class="inspector-title"><span class="eyebrow">DRAWING SETTINGS</span><span class="sheet-number">mm / print</span></div>
+      <details open id="view-panel"><summary>View & crop</summary><div class="detail-body">
+        <label class="select-field">Map boundary<select data-setting="crop"><option value="page">Fill page</option><option value="rectangle">Square</option><option value="circle">Circle</option></select></label>
+        <p class="hint">Fill page follows your paper. Square and Circle keep their own boundary.</p>
+        <label class="range-field circle-setting"><span>Crop radius <output id="cropRadius-value">1,000 m</output></span><input type="range" min="100" max="1500" step="any" value="1000" data-setting="cropRadius" data-unit=" m"></label>
+        <label class="range-field"><span>Map rotation <output id="rotation-value">0°</output></span><input type="range" min="-180" max="180" step="1" value="0" data-setting="rotation" data-unit="°"></label>
+        <div class="view-reset-buttons"><button id="reset-view" class="outline">Center map</button><button id="north-up" class="outline">North up</button></div>
+        <button id="fit-buildings" class="outline full">Fit buildings to page</button>
+        <label class="range-field axon-setting"><span>View elevation <output id="axonAngle-value">35°</output></span><input type="range" min="15" max="65" step="1" value="35" data-setting="axonAngle" data-unit="°"></label>
+        <p class="hint">Drag to pan. Scroll or pinch to zoom. Shift-drag to rotate. Fit buildings frames the buildings in your current area.</p>
+        <details class="advanced-fields"><summary>Precise position</summary><div class="field-pair"><label>East (m)<input type="number" min="-10000" max="10000" step="25" value="0" data-setting="centerX" data-number></label><label>North (m)<input type="number" min="-10000" max="10000" step="25" value="0" data-setting="centerY" data-number></label></div></details>
+        <p class="hint circle-setting">Circle crops preserve whole building footprints. Buildings crossing the boundary are omitted from drawings and STL.</p>
+      </div></details>
+      <details open><summary>Paper & composition</summary><div class="detail-body">
+        <div class="field-pair"><label>Format<select data-setting="paper"><option value="a3">A3 · 420 × 297 mm</option><option value="a4">A4 · 297 × 210 mm</option><option value="letter">US Letter</option><option value="square">Square · 300 × 300 mm</option><option value="poster48">Poster · 48 × 36 in</option><option value="square48">Square · 48 × 48 in</option></select></label><label>Orientation<select data-setting="orientation"><option value="landscape">Landscape</option><option value="portrait">Portrait</option></select></label></div>
+        <label class="select-field">Canvas background<select data-setting="pngBackground"><option value="paper">Paper color</option><option value="white">White</option><option value="black">Black</option><option value="transparent">Transparent</option></select></label>
+        <div id="artwork-warning" class="inline-note" hidden><span></span> <button id="contrast-ink" class="quiet">Use contrasting ink</button></div>
+        <label class="select-field">Drawing scale<select data-setting="scale" data-number><option value="0">Fit to sheet</option><option value="1000">1 : 1,000</option><option value="2500">1 : 2,500</option><option value="5000">1 : 5,000</option><option value="10000">1 : 10,000</option><option value="20000">1 : 20,000</option></select></label>
+        <p class="hint">Paper scale controls the drawing. The 3D model uses the geographic area set in View & crop.</p>
+        <label class="range-field"><span>Margin <output id="margin-value">8 mm</output></span><input type="range" min="0" max="40" step="1" value="8" data-setting="margin" data-unit=" mm"></label>
+      </div></details>
+      <details id="style-panel"><summary>Ink & color</summary><div class="detail-body">
+        <div class="field-pair"><label>Artwork<select data-setting="artwork"><option value="color">Theme colors</option><option value="black">Black ink</option><option value="white">White ink</option></select></label><label>Buildings<select data-setting="buildingFill" data-boolean><option value="true">Filled</option><option value="false">Outline</option></select></label></div>
+        <div class="palette-controls" role="group" aria-label="Theme colors"><label>Paper<input type="color" data-setting="paperColor" data-palette="paper"></label><label>Buildings<input type="color" data-setting="buildingColor" data-palette="building"></label><label>Water<input type="color" data-setting="waterColor" data-palette="water"></label><label>Parks<input type="color" data-setting="parkColor" data-palette="park"></label><label>Lines<input type="color" data-setting="inkColor" data-palette="ink"></label></div>
+        <button id="reset-theme-colors" class="quiet full">Reset theme colors</button>
+        <label class="range-field"><span>Building outlines <output id="buildingWeight-value">0.25 mm</output></span><input type="range" min="0.10" max="0.70" step="0.01" value="0.25" data-setting="buildingWeight" data-unit=" mm"></label>
+        <label class="range-field"><span>Context lines <output id="contextWeight-value">0.13 mm</output></span><input type="range" min="0.05" max="0.40" step="0.01" value="0.13" data-setting="contextWeight" data-unit=" mm"></label>
+        <label class="toggle-field"><span>Vector hatching</span><input type="checkbox" data-setting="hatching"></label>
+        <label class="range-field"><span>Hatch spacing <output id="hatchSpacing-value">2 mm</output></span><input type="range" min="0.8" max="5" step="0.2" value="2" data-setting="hatchSpacing" data-unit=" mm"></label>
+        <label class="range-field axon-setting"><span>Height expression <output id="heightFactor-value">1×</output></span><input type="range" min="0.25" max="2" step="0.05" value="1" data-setting="heightFactor" data-unit="×"></label>
+        <label class="range-field axon-setting"><span>3D face contrast <output id="surfaceContrast-value">75%</output></span><input type="range" min="0" max="100" step="5" value="75" data-setting="surfaceContrast" data-unit="%"></label>
+        <p class="hint axon-setting">Separate roofs, lit walls and shaded walls. Lower contrast restores the solid palette.</p>
+        <p class="hint axon-setting">Height expression scales buildings in the drawing and STL model. Terrain elevations keep their source proportions.</p>
+      </div></details>
+      <details><summary>Map layers</summary><div class="detail-body">
+        <div class="layer-list inspector-layers">
+          <label><span>Buildings</span><input type="checkbox" data-setting="buildings" checked></label>
+          <label><span>Roof details</span><input type="checkbox" data-setting="roofDetails" checked></label>
+          <label><span>Streets & walkways</span><input type="checkbox" data-setting="roads" checked></label>
+          <label><span>Trails & tracks</span><input type="checkbox" data-setting="trails"></label>
+          <label><span>Parks & open space</span><input type="checkbox" data-setting="parks" checked></label>
+          <label><span>Water</span><input type="checkbox" data-setting="water" checked></label>
+          <label><span>Lines between water bodies</span><input type="checkbox" data-setting="waterSeams"></label>
+          <label><span>Trees</span><input type="checkbox" data-setting="trees" checked></label>
+          <label><span>Terrain relief</span><input type="checkbox" data-setting="terrain" checked></label>
+          <label><span>Terrain contours</span><input type="checkbox" data-setting="contours" checked></label>
+        </div>
+        <label class="range-field"><span>Tree spacing <output id="treeSpacing-value">2.5 mm</output></span><input type="range" min="1" max="8" step=".5" value="2.5" data-setting="treeSpacing" data-unit=" mm"></label>
+        <label class="select-field">Contour interval<select data-setting="contourInterval" data-number><option value="5">5 m</option><option value="10" selected>10 m</option><option value="20">20 m</option><option value="50">50 m</option></select></label>
+        <p class="hint">Trees thin as the area grows. Terrain shows regional relief; mapped structural parts stay in place when roof detail is off.</p>
+      </div></details>
+      <details id="annotations-panel"><summary>Annotations</summary><div class="detail-body">
+        <label class="toggle-field"><span>Title & subtitle</span><input type="checkbox" id="show-title"></label>
+        <label class="toggle-field"><span>Print source credits</span><input type="checkbox" data-setting="showCredits"></label>
+        <label class="select-field">Annotation layout<select data-setting="titleLayout"><option value="panel">Header</option><option value="block">Detailed footer</option><option value="strip">Thin credit strip</option></select></label>
+        <label class="select-field">Drawing title<input type="text" data-setting="title" maxlength="90" value=""></label>
+        <label class="select-field">Subtitle<input type="text" data-setting="subtitle" maxlength="90" value="" placeholder="Optional · location, collection or note"></label>
+        <label class="toggle-field"><span>Header backing panel</span><input type="checkbox" data-setting="titleBackdrop"></label>
+        <label class="toggle-field"><span>Compass / north arrow</span><input type="checkbox" data-setting="compass"></label>
+        <label class="select-field">Compass location<select data-setting="compassPosition"><option value="map">Map · bottom right</option><option value="footer">Footer · bottom right</option></select></label>
+        <label class="toggle-field"><span>Page & map outline</span><input type="checkbox" data-setting="outline"></label>
+        <p class="hint">Title and printed credits are optional. When both are off, the drawing gets the full page.</p>
+        <button id="export-credits" class="quiet full">Download source credits (.txt)</button>
+      </div></details>
+      <details id="hero-panel"><summary>Hero building</summary><div class="detail-body">
+        <label class="select-field">Placement<select id="hero-placement"><option value="center">At current map center</option><option value="geographic">At GeoJSON coordinates</option></select></label>
+        <label class="toggle-field"><span>Replace buildings beneath hero</span><input type="checkbox" id="hero-replace" checked></label>
+        <button id="add-hero-inspector" class="outline full">Add building footprint ↗</button><p class="hint">GeoJSON describes a footprint and height, including courtyards. Detailed GLB / glTF mesh import is a later 3D tool.</p>
+        <div id="hero-status" class="hint">No added hero buildings in this study.</div>
+      </div></details>
+      <details id="output-panel"><summary>Export</summary><div class="detail-body">
+        <div class="output-tabs"><button data-output="paper" class="active">Paper / pen</button><button data-output="model">3D model</button></div>
+        <div id="paper-output">
+          <div class="output-presets" role="group" aria-label="Output starting points"><button data-output-preset="paper">Paper</button><button data-output-preset="plotter">Pen plot</button><button data-output-preset="apparel">Apparel</button></div>
+          <button class="outline full large-print-button" data-output-preset="largeprint">48″ print · 300 DPI</button>
+          <label class="select-field">PNG detail<select data-setting="pngDpi" data-number><option value="300">300 DPI</option><option value="600" selected>600 DPI</option><option value="1200">1200 DPI</option></select></label>
+          <p id="png-size-info" class="export-size" aria-live="polite"></p>
+          <div class="export-grid" role="group" aria-label="Artwork exports"><button id="export-svg" class="outline">Artwork SVG ↗</button><button id="export-png" class="outline">Export PNG ↗</button></div>
+          <p class="hint">Keeps your drawing’s colors, fills and canvas setting. PNG uses the print resolution above.</p>
+          <div class="export-grid" role="group" aria-label="Pen plot exports"><button id="export-plotter" class="outline">Black plot SVG ↗</button><button id="export-color-plotter" class="outline">Color plot SVG ↗</button></div>
+          <p class="hint">Pen paths only, without fills or a background. Color plots separate theme inks into numbered pen layers. Turn on hatching for tonal areas.</p>
+          <button id="print-sheet" class="outline full">Print / PDF ↗</button>
+        </div>
+        <div id="model-output" hidden><label class="select-field">Model width (mm)<input id="model-width" type="number" min="50" max="400" step="10" value="180"></label><div class="field-pair"><label>Base (mm)<input id="model-base" type="number" min="1" max="10" step="0.5" value="3"></label><label>Min. height (mm)<input id="model-height" type="number" min="0.5" max="5" step="0.1" value="0.8"></label></div><button id="export-stl" class="primary full">Export physical model ↗</button><p class="hint">Downloads a ZIP with the STL and required source notices. Flat base, terrain relief and closed building shells at true model scale. Merge intersecting volumes in your slicer.</p></div>
+      </div></details>
+      <details id="source-panel"><summary>About this map</summary><div id="data-note" class="data-note">Map geometry is preserved across views.</div><div id="source-notices" class="data-note source-notices" hidden></div></details>
+    </aside>
+  </main>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <input id="map-file" type="file" accept=".geojson,.json,application/geo+json,application/json" hidden>
+  <input id="hero-file" type="file" accept=".geojson,.json,application/geo+json,application/json" hidden>
+  <input id="project-file" type="file" accept=".json,application/json" hidden>
+  <script type="module" src="./app.mjs"></script>
+</body>
 </html>

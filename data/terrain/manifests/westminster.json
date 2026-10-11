@@ -1,0 +1,98 @@
+{
+  "complete": true,
+  "verifiedAt": "2026-10-10T06:48:05.396Z",
+  "method": "AWS response imagery headers verified against unchanged cached PNG bytes",
+  "providers": [
+    "uk_lidar"
+  ],
+  "tiles": [
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/4092/2723.png",
+      "sha256": "2ee1284626514afc4c76be7274007f0393ddf503b606a0d9dd7a618e4a0311f0",
+      "etag": "d11894c6c335939448487cc54055b724",
+      "versionId": "xzIODKn3a..WtK1KguVBHEZZr5b3d7w4",
+      "imagerySources": [
+        "uk_lidar/LIDAR-DTM-2M-TQ28.tif"
+      ]
+    },
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/4093/2723.png",
+      "sha256": "44dc2fe908f33bce94526b216248742967ca6437f1b24aa2f1bf696a86ff9f3f",
+      "etag": "8dff49c0f19752fba6621df3c0dbab01",
+      "versionId": "e3ksvxQpGGVfv9ekzTTkWnf.fAlScsoJ",
+      "imagerySources": [
+        "uk_lidar/LIDAR-DTM-2M-TQ38.tif",
+        "uk_lidar/LIDAR-DTM-2M-TQ28.tif"
+      ]
+    },
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/4094/2723.png",
+      "sha256": "f608368dd0aa9d7cfe842b5b9009db05a1ccf2883d91c263c0e56cea75a8933e",
+      "etag": "3bcb2c0d1bbba6ae8d5e210808d9dbf5",
+      "versionId": "q9nXai9WnrX95mKXmU7F2XXmP6Z_nbhQ",
+      "imagerySources": [
+        "uk_lidar/LIDAR-DTM-2M-TQ38.tif"
+      ]
+    },
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/4092/2724.png",
+      "sha256": "4e84e483898dd68107c247965b0a96645bec71de97d3a586530923319abd2190",
+      "etag": "d13d4687ea0e13bc92f27051458257ec",
+      "versionId": "_RppItCBmKEUyPtcN13ExdPMwfJPASaN",
+      "imagerySources": [
+        "uk_lidar/LIDAR-DTM-2M-TQ27.tif",
+        "uk_lidar/LIDAR-DTM-2M-TQ28.tif"
+      ]
+    },
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/4093/2724.png",
+      "sha256": "7edb89ffa35a40a54fbebedcba85238a55bc2bf07b4a034822ef9da822759c31",
+      "etag": "17646549129b3ee3b024f2cae46186ce",
+      "versionId": "BmUYzgmADRfF3PLjZYQpBoSHDeWHpR3p",
+      "imagerySources": [
+        "uk_lidar/LIDAR-DTM-2M-TQ37.tif",
+        "uk_lidar/LIDAR-DTM-2M-TQ38.tif",
+        "uk_lidar/LIDAR-DTM-2M-TQ27.tif",
+        "uk_lidar/LIDAR-DTM-2M-TQ28.tif"
+      ]
+    },
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/4094/2724.png",
+      "sha256": "e6e9ca2cc33c409f0667f804f66272959659cd92b355bdca548828b1e8b67aff",
+      "etag": "2e7ca2b593be421074d63d46f769aaad",
+      "versionId": "ede9HRUNJrfB.j83R8SJUmklVhJNumDl",
+      "imagerySources": [
+        "uk_lidar/LIDAR-DTM-2M-TQ37.tif",
+        "uk_lidar/LIDAR-DTM-2M-TQ38.tif"
+      ]
+    },
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/4092/2725.png",
+      "sha256": "6dd0268bbb18fc38360a6747b01dc252060058f4c5657192b3481e41cca1be40",
+      "etag": "1f84d862f252ad49a554b392759c051f",
+      "versionId": "bVXEPqSppG0VmGgdqYMO_.SlxAR4Towj",
+      "imagerySources": [
+        "uk_lidar/LIDAR-DTM-2M-TQ27.tif"
+      ]
+    },
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/4093/2725.png",
+      "sha256": "845977c076cb598c0da209d3f8f18492abfe5e4a8d56bcc91f81894d2260f87a",
+      "etag": "615910aff7e0d62d05554d2dd0f106ee",
+      "versionId": "GMQ1rYUpaEdTbYT63f4T4NUpMi8hRokt",
+      "imagerySources": [
+        "uk_lidar/LIDAR-DTM-2M-TQ37.tif",
+        "uk_lidar/LIDAR-DTM-2M-TQ27.tif"
+      ]
+    },
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/4094/2725.png",
+      "sha256": "bd54d177575bd1e006bb2c3d690d8ad4f4e8099a07cd7195d22d715d35ced88c",
+      "etag": "d4e7f9b597dbd820607d12200f7c9588",
+      "versionId": "DPBo0gMBWF0Z3iG4fIkyBDAhXsVmDk3A",
+      "imagerySources": [
+        "uk_lidar/LIDAR-DTM-2M-TQ37.tif"
+      ]
+    }
+  ]
+}

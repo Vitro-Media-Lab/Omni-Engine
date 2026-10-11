@@ -1,0 +1,46 @@
+{
+  "complete": true,
+  "verifiedAt": "2026-10-10T06:48:05.398Z",
+  "method": "AWS response imagery headers verified against unchanged cached PNG bytes",
+  "providers": [
+    "ned13"
+  ],
+  "tiles": [
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/2101/3044.png",
+      "sha256": "2e937960fb5be706883fe597c6c78225976c96e79a06e4e93e7049af9881971e",
+      "etag": "7ce4b1111549fb36d5bb92c1d166213f",
+      "versionId": "kszqwLBpXvHlcNG78PSFuiruY2ax6OyD",
+      "imagerySources": [
+        "ned13/USGS_NED_13_n42w088_IMG.tif"
+      ]
+    },
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/2102/3044.png",
+      "sha256": "afea22d4de9d78c4289a2ee823e926aea52eb5a3dc3374e595473cc7e6d9d593",
+      "etag": "6fcd9e268a5db52fadcf3019b99341e8",
+      "versionId": "NXP_uUkjjkems0tkcZ1x0mKsZW6pGmVb",
+      "imagerySources": [
+        "ned13/USGS_NED_13_n42w088_IMG.tif"
+      ]
+    },
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/2101/3045.png",
+      "sha256": "ddba465ae36b555f6050901b507fbcdc398f4d2c84417f4b4288bef3034dafa5",
+      "etag": "349f7b64e9cb8052fa2f8711178fe6de",
+      "versionId": "mnnjKA32jcfE0fxaGMsCsC3yD_KidHTf",
+      "imagerySources": [
+        "ned13/USGS_NED_13_n42w088_IMG.tif"
+      ]
+    },
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/2102/3045.png",
+      "sha256": "5e62b989be349f711354f8a53343251849c4fe4efffa43dd982b1182a58bfbce",
+      "etag": "304ec77167c3a842d6dc77319a2e638e",
+      "versionId": "nbbRcIfzSnERsZv9erv0Dkl1bxrHk86x",
+      "imagerySources": [
+        "ned13/USGS_NED_13_n42w088_IMG.tif"
+      ]
+    }
+  ]
+}

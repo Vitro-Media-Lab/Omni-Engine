@@ -1,0 +1,28 @@
+{
+  "complete": true,
+  "verifiedAt": "2026-10-10T06:48:05.296Z",
+  "method": "AWS response imagery headers verified against unchanged cached PNG bytes",
+  "providers": [
+    "srtm"
+  ],
+  "tiles": [
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/6409/4024.png",
+      "sha256": "26de7654d9fca476fa8c143744c4c98e2ae03c6c17c2901f3e0e0509e62be352",
+      "etag": "6040ae67cc563b6bc8b926051ba56255",
+      "versionId": "4YdHmBDuabSq2k7BUUG3hh6YuIyMGR0l",
+      "imagerySources": [
+        "srtm/N03E101.tif"
+      ]
+    },
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/6410/4024.png",
+      "sha256": "2b7565733c44f23519becb02a81641effc4ae5dba13a1207eef797a6bb0dfa3a",
+      "etag": "d9dddfa8bff708219ad6e6866e58aac0",
+      "versionId": "NBfBbIe44JwXrQAtDywfMCA0QYcM7mj1",
+      "imagerySources": [
+        "srtm/N03E101.tif"
+      ]
+    }
+  ]
+}

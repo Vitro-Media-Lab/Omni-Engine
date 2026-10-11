@@ -1,0 +1,50 @@
+{
+  "complete": true,
+  "verifiedAt": "2026-10-10T06:48:05.292Z",
+  "method": "AWS response imagery headers verified against unchanged cached PNG bytes",
+  "providers": [
+    "srtm",
+    "gmted"
+  ],
+  "tiles": [
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/6458/4066.png",
+      "sha256": "19c0f07b752dce849861564a8567b941886f3a72a5f5f418a1570a76958c7239",
+      "etag": "be0597a402b8c03d2f0a40da0ef8cfd7",
+      "versionId": "FVlvTBkjqMD0On67BQNenQmOif6ABi6g",
+      "imagerySources": [
+        "srtm/N01E103.tif"
+      ]
+    },
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/6459/4066.png",
+      "sha256": "ed36c0312aafccac7c327f4da33fe29bdd40e5721be1bc03c838e94911b2056e",
+      "etag": "35f4aa6a84300f722404929a668dd512",
+      "versionId": "6nYt69M285SSTSi3c4qFb77oyGipLcf9",
+      "imagerySources": [
+        "srtm/N01E103.tif",
+        "gmted/10S090E_20101117_gmted_mea075.tif"
+      ]
+    },
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/6458/4067.png",
+      "sha256": "7ece1b51f3aaa0a371f26e326a17919e37b60da9512a24f2729bb5357d5ccdf2",
+      "etag": "5fd856b9ff9d98b2b50aa4504465b1aa",
+      "versionId": "U.ffvX75yuqyrsfRhpCzJCb4hIPqYBvi",
+      "imagerySources": [
+        "srtm/N01E103.tif",
+        "gmted/10S090E_20101117_gmted_mea075.tif"
+      ]
+    },
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/6459/4067.png",
+      "sha256": "e234faf3cef2bdd67e7c2e98c96bf142b056838cdc1e40730b43bb6b6d0a876f",
+      "etag": "b78cabb84baa0a436a933e6e55fd0e9b",
+      "versionId": "7UszNcvmrC1vae9r0UZ8WScgYq4IrUGc",
+      "imagerySources": [
+        "srtm/N01E103.tif",
+        "gmted/10S090E_20101117_gmted_mea075.tif"
+      ]
+    }
+  ]
+}
